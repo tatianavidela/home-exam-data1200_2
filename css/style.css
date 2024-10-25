@@ -1,0 +1,33 @@
+
+/*General - styles that are repeated across pages*/
+body {
+	min-height: 100vh;
+	margin: 0px;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	position: relative;
+}
+
+h2, h3, a, p, li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+h1 {
+    font-family: owners-wide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+
+/*Header___________________________________TATIANA*/
+
+/*Index section one - Accordion____________SIMEN*/
+
+/*Index section one - Table________________MARTIN*/
+
+/*Index Section two - buttons og links_____REBEKKA*/
+
+/*Footer___________________________________JULIE*/
