@@ -24,6 +24,18 @@ h1 {
 
 /*Header___________________________________TATIANA*/
 
+/*Hamburger toggle (code from canvas module: grid layout and complete page, 
+Example complete page 2: Hamburger menu)*/
+#hamburger-toggle{
+	display: none;
+}
+.menu{
+	list-style-type: none;
+}
+.menu-icon{
+	display: block;
+}
+
 /*Index section one - Accordion____________SIMEN*/
 
 /*Index section one - Table________________MARTIN*/
