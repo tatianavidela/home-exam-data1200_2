@@ -27,7 +27,20 @@ h1 {
 /*Index section one - Accordion____________SIMEN*/
 
 details{
+	font-size: 1.6em;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.05em;
+}
 
+summary{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+details:not([open]) summary{
+	font-size: 1.6em;
+	font-weight: normal;
 }
 
 .accordionLink{
