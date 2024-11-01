@@ -26,6 +26,19 @@ h1 {
 
 /*Index section one - Accordion____________SIMEN*/
 
+details{
+
+}
+
+.accordionLink{
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #9a9a9a;
+}
+.accordionLink:hover{
+	text-decoration-color: #f7af8e;
+}
+
 /*Index section one - Table________________MARTIN*/
 
 /*Index Section two - buttons og links_____REBEKKA*/
