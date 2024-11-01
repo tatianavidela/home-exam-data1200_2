@@ -50,15 +50,21 @@ details:not([open]) summary{
 	list-style-image: url(../media/plus.svg);
 }
 
-.accordionLink{
+details .hva-lærer-du-summary {
+	font-size: 0.05em;
+}
+
+
+
+.accordion-link{
 	color: black;
 	text-decoration: underline;
 	text-decoration-color: #9a9a9a;
 }
-.accordionLink:hover{
+.accordion-link:hover{
 	text-decoration-color: #f7af8e;
 }
-.accordionList{
+.accordion-list{
 	
 }
 
