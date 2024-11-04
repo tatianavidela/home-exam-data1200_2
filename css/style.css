@@ -19,22 +19,52 @@ h1 {
     font-weight: 700;
     font-style: normal;
     font-size: 3em;
+	text-transform: uppercase;
 }
 
 
 /*Header___________________________________TATIANA*/
+header {
+	background-color: #FFF4BC;
+}
+nav {
+	padding: 2em;
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	width: 4em;
+}
 
 /*Hamburger toggle (code from canvas module: grid layout and complete page, 
 Example complete page 2: Hamburger menu)*/
 #hamburger-toggle{
 	display: none;
 }
+.hamburger-toggle-container {
+	cursor: pointer;
+}
 .menu{
 	list-style-type: none;
+	padding-right: 20px;
 }
 .menu-icon{
 	display: block;
+	background-image:url(../media/hamburger-menu.svg);
+	background-size: cover;
+	height: 40px;
+	width: 40px;
 }
+.menu li {
+	height: 0px;
+	overflow: hidden;
+}
+#hamburger-toggle:checked ~ .menu li {
+	height: 1rem;
+	width: auto;
+}
+
+
 
 /*Index section one - Accordion____________SIMEN*/
 
