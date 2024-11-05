@@ -26,6 +26,16 @@ h1 {
 
 /*Index section one - Accordion____________SIMEN*/
 
+.sectionSimen{
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+
+}
+
+
 details{
 	font-size: 1.6em;
 	font-family: Arial, Helvetica, sans-serif;
@@ -46,6 +56,7 @@ details > summary {
 details details {
 
 	font-size: 0.7em;
+	padding: 0.4em;
 }
 
 details:not([open]) summary{
@@ -62,8 +73,10 @@ details:not([open]) summary{
 .accordion-link:hover{
 	text-decoration-color: #f7af8e;
 }
-.accordion-list{
+.accordion-list li {
 	
+	padding: 0.4em;
+
 }
 
 /*Index section one - Table________________MARTIN*/
