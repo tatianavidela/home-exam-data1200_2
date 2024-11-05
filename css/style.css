@@ -21,21 +21,21 @@ h1 {
     font-size: 3em;
 	text-transform: uppercase;
 }
-
-
-/*Header___________________________________TATIANA*/
-header {
+nav, header {
 	background-color: #FFF4BC;
 }
+
+/*NAV*/
 nav {
-	padding: 2em;
+	position: sticky;
+	top: 0;
+	padding: 3em 5em;
 	display: flex;
 	justify-content: space-between;
 }
 .logo {
 	width: 4em;
 }
-
 /*Hamburger toggle (code from canvas module: grid layout and complete page, 
 Example complete page 2: Hamburger menu)*/
 #hamburger-toggle{
@@ -45,8 +45,9 @@ Example complete page 2: Hamburger menu)*/
 	cursor: pointer;
 }
 .menu{
+	margin: 0;
 	list-style-type: none;
-	padding-right: 20px;
+	padding: 0;
 }
 .menu-icon{
 	display: block;
@@ -59,12 +60,22 @@ Example complete page 2: Hamburger menu)*/
 	height: 0px;
 	overflow: hidden;
 }
+
 #hamburger-toggle:checked ~ .menu li {
 	height: 1rem;
 	width: auto;
+	padding-top: 2em;
+
 }
 
+/*HEADER*/
 
+
+
+
+main {
+	height: 1400px;
+}
 
 /*Index section one - Accordion____________SIMEN*/
 
