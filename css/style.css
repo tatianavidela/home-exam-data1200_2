@@ -33,6 +33,8 @@ h1 {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
+	padding-left: 25em;
+	padding-right: 20em;
 }
 
 .sectionSimen div {
