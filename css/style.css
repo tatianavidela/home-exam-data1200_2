@@ -15,10 +15,11 @@ a {
 	text-decoration: none;
 }
 h1 {
+	margin: 0;
     font-family: owners-wide, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3em;
+    font-size: 3vw;
 	text-transform: uppercase;
 }
 nav, header {
@@ -29,15 +30,28 @@ nav, header {
 nav {
 	position: sticky;
 	top: 0;
-	padding: 3em 5em;
+	padding: 2em 5em;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+
+}
+nav ul{
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+nav li {
+	padding: 0em 2em;
+	display: inline-block;
 }
 .logo {
 	width: 4em;
 }
+
 /*Hamburger toggle (code from canvas module: grid layout and complete page, 
 Example complete page 2: Hamburger menu)*/
+/* 
 #hamburger-toggle{
 	display: none;
 }
@@ -45,9 +59,11 @@ Example complete page 2: Hamburger menu)*/
 	cursor: pointer;
 }
 .menu{
+	position: absolute;
 	margin: 0;
 	list-style-type: none;
 	padding: 0;
+	background-color: #FFF4BC;
 }
 .menu-icon{
 	display: block;
@@ -60,15 +76,31 @@ Example complete page 2: Hamburger menu)*/
 	height: 0px;
 	overflow: hidden;
 }
-
 #hamburger-toggle:checked ~ .menu li {
 	height: 1rem;
 	width: auto;
 	padding-top: 2em;
+} */
 
-}
+
 
 /*HEADER*/
+header {
+	display: flex;
+	justify-content: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	width: 100%;
+}
+.header-text, .header-img {
+    width: 36%;
+    height: 320px;
+}
+.header-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 
 
