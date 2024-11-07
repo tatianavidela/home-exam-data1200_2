@@ -33,17 +33,8 @@ nav {
 	padding: 2em 5em;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: start;
 
-}
-nav ul{
-	padding: 0;
-	margin: 0;
-	display: flex;
-}
-nav li {
-	padding: 0em 2em;
-	display: inline-block;
 }
 .logo {
 	width: 4em;
@@ -51,20 +42,57 @@ nav li {
 
 /*Hamburger toggle (code from canvas module: grid layout and complete page, 
 Example complete page 2: Hamburger menu)*/
-/* 
+
+
 #hamburger-toggle{
 	display: none;
 }
-.hamburger-toggle-container {
+
+
+
+@media (min-width:701px){
+	.menu{
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: center;
+	}
+
+	.menu li{
+		padding:1em 2em;
+	}
+}
+
+@media (max-width: 700px){
+	.menu {
+		list-style-type: none;
+		padding: 0;
+		position: absolute;
+		left: 45%;
+	}
+	
+	.menu-icon {
+		display: block;
+		background-image:url(../media/hamburger-menu.svg);
+		background-size: cover;
+		height: 40px;
+		width: 40px;
+	}
+	.menu li {
+		height: 0px;
+		overflow: hidden;
+	}
+	#hamburger-toggle:checked ~ .menu li {
+		height: 1rem;
+		width: auto;
+		padding-top: 2em;
+	} 
+}
+
+/* .hamburger-toggle-container {
 	cursor: pointer;
 }
-.menu{
-	position: absolute;
-	margin: 0;
-	list-style-type: none;
-	padding: 0;
-	background-color: #FFF4BC;
-}
+
 .menu-icon{
 	display: block;
 	background-image:url(../media/hamburger-menu.svg);
@@ -80,7 +108,7 @@ Example complete page 2: Hamburger menu)*/
 	height: 1rem;
 	width: auto;
 	padding-top: 2em;
-} */
+}  */
 
 
 
