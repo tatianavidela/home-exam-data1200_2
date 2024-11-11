@@ -36,52 +36,62 @@ footer{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1.25em;
+	padding: 1.0em;
 	background-color:#FFF4BC;
 	color:#000000;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.2em;/*se om denne skal endres*/
-
 }
 
 .footer-item{
 	padding: 0.625em;
-	list-style-type: none; /* Remove bullets */
+	list-style-type: none;
+	line-height: 2.5em;
 }
 
-footer img{
-	max-height: 3.0em;
-	max-width: 15.0em;
-}
-
-.footer-item1 img{
-	padding-bottom: 1.25em;
-}
-
-.footer-item4 img{
-	max-height: 1.0em;
-}
-
-
-
-
-
-
-/*footer img{
-	max-height: 3.0em;
-	max-width: 15.0em;
-}
-.footer-item{
+.footer-item1 {
 	padding: 0.625em;
-	list-style-type: none; /* Remove bullets
-}
-.footer-item1 img{
-	padding-bottom: 1.25em;
+	padding-top: 1.0em;
+	list-style-type: none;
+	line-height: 1.3em;
 }
 
-.footer-item4 img{
+a:link {
+	color:#000000;
+	background-color: transparent;
+	text-decoration: none;
+	/*font-weight: bold;*/
+}
+
+.kontakt {
+	color:#000000;
+	background-color: transparent;
+	text-decoration: none;
+	font-weight:bold;
+	line-height: 1.5em;
+	padding-bottom: 0.625em;
+}
+
+a:visited {
+	color: #000000;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.footer-item1 img{ /* OsloMet Logo*/
+	max-height: 3.0em;
+	max-width: 15.0em;
+	padding-bottom: 2.0em;
+}
+
+.footer-item4-icon img{ /*SoMe icons*/
 	max-height: 1.0em;
-	list-style-type: none;  Remove bullets
-}*/
+	padding-bottom: 0.0em;
+	padding-left:12em;
+}
 
-
+.footer-item4_IMG{ /*Abonner på vårt nyhetsbrev*/
+	height: 3.0rem;
+	width: auto	;
+	padding-bottom: 1.0em;
+}
