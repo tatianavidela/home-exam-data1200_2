@@ -56,14 +56,14 @@ footer{
 	line-height: 1.3em;
 }
 
-a:link {
+a:link {  /* footer links*/
 	color:#000000;
 	background-color: transparent;
 	text-decoration: none;
 	/*font-weight: bold;*/
 }
 
-.kontakt {
+.kontakt {  /* footer links, kontakt*/
 	color:#000000;
 	background-color: transparent;
 	text-decoration: none;
@@ -72,7 +72,7 @@ a:link {
 	padding-bottom: 0.625em;
 }
 
-a:visited {
+a:visited { /* footer links, besøkt*/
 	color: #000000;
 	background-color: transparent;
 	text-decoration: none;
