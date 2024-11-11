@@ -323,3 +323,67 @@ height: 3px;
 /*Index Section two - buttons og links_____REBEKKA*/
 
 /*Footer___________________________________JULIE*/
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.0em;
+	background-color:#FFF4BC;
+	color:#000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;/*se om denne skal endres*/
+}
+
+.footer-item{
+	padding: 0.625em;
+	list-style-type: none;
+	line-height: 2.5em;
+}
+
+.footer-item1 {
+	padding: 0.625em;
+	padding-top: 1.0em;
+	list-style-type: none;
+	line-height: 1.3em;
+}
+
+a:link {  /* footer links*/
+	color:#000000;
+	background-color: transparent;
+	text-decoration: none;
+	/*font-weight: bold;*/
+}
+
+.kontakt {  /* footer links, kontakt*/
+	color:#000000;
+	background-color: transparent;
+	text-decoration: none;
+	font-weight:bold;
+	line-height: 1.5em;
+	padding-bottom: 0.625em;
+}
+
+a:visited { /* footer links, besøkt*/
+	color: #000000;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.footer-item1 img{ /* OsloMet Logo*/
+	max-height: 3.0em;
+	max-width: 15.0em;
+	padding-bottom: 2.0em;
+}
+
+.footer-item4-icon img{ /*SoMe icons*/
+	max-height: 1.0em;
+	padding-bottom: 0.0em;
+	padding-left:12em;
+}
+
+.footer-item4_IMG{ /*Abonner på vårt nyhetsbrev*/
+	height: 3.0rem;
+	width: auto	;
+	padding-bottom: 1.0em;
+}
