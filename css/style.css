@@ -8,7 +8,7 @@ body {
 	position: relative;
 }
 
-h2, h3, a, p, li {
+h2, h3, a, p, li, table{
     font-family: Arial, Helvetica, sans-serif;
 }
 a {
@@ -93,13 +93,15 @@ Example complete page 2: Hamburger menu)*/
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	background-color: #FFF4BC;
 }
 .header-row{
 	display: flex;
 	max-width: 80%;
 	justify-content: center;
 	padding: 2vw;
-	border-bottom: 4px solid blue;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgb(81, 81, 81);
 
 }
 .title-box, .title-img {
@@ -129,7 +131,70 @@ Example complete page 2: Hamburger menu)*/
 
 
 
+  /* General table styling */
+.header-table {
+	width: 80%;
+	margin: 0 auto;
+}
 
+.header-table table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.header-table table, td, th {
+	margin: 20px auto;
+	padding: 8px;
+	text-align: center;
+}
+
+
+/* Responsive styling for screen widths smaller than 1000px */
+@media screen and (max-width: 1000px) {
+
+	.header-table{
+		width: 90%;
+	}
+	.header-table table,
+	.header-table thead,
+	.header-table tbody,
+	.header-table th,
+	.header-table td,
+	.header-table tr {
+		display: block;
+	}
+	
+	.header-table thead {
+		display: none; /* Hide original table header */
+	}
+
+	.header-table tr {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* Two-column layout */
+		gap: 10px;
+		margin-bottom: 15px;
+		padding: 10px;
+	}
+	
+	.header-table td {
+		display: block;
+		width: 100%;
+		padding: 8px;
+	}
+	
+	.header-table td:last-child {
+		border-bottom: none;
+	}
+	
+	/* Display header as a label on top of each data cell */
+	.header-table td:before {
+		content: attr(data-label);
+		font-weight: bold;
+		display: block;
+		margin-bottom: 5px;
+	}
+}
 
 /*Index section one - Accordion____________SIMEN*/
 
