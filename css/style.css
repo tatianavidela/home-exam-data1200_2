@@ -8,21 +8,193 @@ body {
 	position: relative;
 }
 
-h2, h3, a, p, li {
+h2, h3, a, p, li, table{
     font-family: Arial, Helvetica, sans-serif;
 }
 a {
 	text-decoration: none;
 }
 h1 {
+	margin: 0;
     font-family: owners-wide, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3em;
+    font-size: 3vw;
+	text-transform: uppercase;
 }
 
 
-/*Header___________________________________TATIANA*/
+/*NAV*/
+nav {
+	background-color: #FFF4BC;
+	position: sticky;
+	top: 0;
+	padding: 1em 5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.logo {
+	width: 4em;
+}
+
+/*Hamburger toggle (code from canvas module: grid layout and complete page, 
+Example complete page 2: Hamburger menu)*/
+
+#hamburger-toggle{
+	display: none;
+}
+
+@media (min-width:701px){
+	.menu{
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+	}
+
+	.menu li{
+		padding:1em 2em;
+	}
+}
+
+@media (max-width: 700px){
+	.menu {
+		list-style-type: none;
+        position: absolute;
+		right: 0;
+		padding-right: 2em;
+        background-color: #FFF4BC;
+	}
+	
+	.menu-icon {
+		display: block;
+		background-image:url(../media/hamburger-menu.svg);
+		background-size: cover;
+		height: 40px;
+		width: 40px;
+	}
+	.menu li {
+		height: 0px;
+		overflow: hidden;
+	}
+	#hamburger-toggle:checked ~ .menu li {
+		height: 1rem;
+		width: auto;
+		padding-top: 2em;
+		padding-bottom: 2em;
+
+	} 
+}
+
+/*HEADER*/
+.header-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: #FFF4BC;
+}
+.header-row{
+	display: flex;
+	max-width: 80%;
+	justify-content: center;
+	padding: 2vw;
+	margin-bottom: 20px;
+	border-bottom: 1px solid rgb(81, 81, 81);
+
+}
+.title-box, .title-img {
+	flex: 1;
+	width: 50%;
+} 
+.title-img img{
+	object-fit: cover;
+	width: 100%;
+	max-height: 300px;
+}
+@media (max-width: 700px) {
+    .header-row {
+      flex-direction: column;
+	  align-items: center;
+    }
+	.title-box, .title-img {
+		flex: 1;
+		width: 100%;
+  	}
+	  .title-img img{
+
+		max-height: 200px;
+	}
+}
+
+
+
+
+  /* General table styling */
+.header-table {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header-table table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.header-table table, td, th {
+	margin: 20px auto;
+	padding: 8px;
+	text-align: center;
+}
+
+
+/* Responsive styling for screen widths smaller than 1000px */
+@media screen and (max-width: 1000px) {
+
+	.header-table{
+		width: 90%;
+	}
+	.header-table table,
+	.header-table thead,
+	.header-table tbody,
+	.header-table th,
+	.header-table td,
+	.header-table tr {
+		display: block;
+	}
+	
+	.header-table thead {
+		display: none; /* Hide original table header */
+	}
+
+	.header-table tr {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* Two-column layout */
+		gap: 10px;
+		margin-bottom: 15px;
+		padding: 10px;
+	}
+	
+	.header-table td {
+		display: block;
+		width: 100%;
+		padding: 8px;
+	}
+	
+	.header-table td:last-child {
+		border-bottom: none;
+	}
+	
+	/* Display header as a label on top of each data cell */
+	.header-table td:before {
+		content: attr(data-label);
+		font-weight: bold;
+		display: block;
+		margin-bottom: 5px;
+	}
+}
 
 /*Index section one - Accordion____________SIMEN*/
 
