@@ -197,6 +197,7 @@ Example complete page 2: Hamburger menu)*/
 	}
 }
 
+
 /*Index section one - Accordion____________SIMEN*/
 
 .sectionSimen{
@@ -216,8 +217,6 @@ Example complete page 2: Hamburger menu)*/
 	justify-content: center;
 	align-items: center;
 }
-
-
 
 
 details{
@@ -268,6 +267,58 @@ details:not([open]) summary{
 }
 
 /*Index section one - Table________________MARTIN*/
+table  {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+	border: 1px solid #000;
+	padding: 12px;
+}
+
+td:empty {
+	height: 1px;
+}
+
+
+.rowcolor-fellesfag {
+	background-color: #FFF7D3;
+}
+
+.rowcolor-statiske-og-datadrevne-metoder {
+	background-color: #BCE3FD;
+}
+
+.rowcolor-matematikk-og-fysikk {
+	background-color: #ADE69D;
+}
+
+.rowcolor-vitenskapelige-beregninger{
+	background-color: #F4CBF4;
+}
+
+.table-text {
+height: 3px;
+}
+
+.studieoversikt-color-index{
+	margin-left: 30px;
+	margin-right: auto;
+	width: 25%;
+	text-align:left;
+	white-space: nowrap;
+}
+
+.studieoversikt {
+	margin-left: 30px;
+	margin-right: auto;
+	width: 60%;
+	text-align: center;
+}
 
 /*Index Section two - buttons og links_____REBEKKA*/
 
