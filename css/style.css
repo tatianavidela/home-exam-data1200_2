@@ -198,6 +198,74 @@ Example complete page 2: Hamburger menu)*/
 
 /*Index section one - Accordion____________SIMEN*/
 
+.sectionSimen{
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	padding-left: 25em;
+	padding-right: 20em;
+}
+
+.sectionSimen div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+details{
+	font-size: 1.6em;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.05em;
+	padding: 0.9em;
+	border-bottom: solid;
+	border-color: rgb(207, 207, 207);
+
+}
+
+summary{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	
+}
+
+details > summary {
+	list-style-image: url(../media/minus.svg);
+}
+
+details details {
+
+	font-size: 0.7em;
+	padding: 0.4em;
+}
+
+details:not([open]) summary{
+	font-size: 1.6em;
+	font-weight: normal;
+	list-style-image: url(../media/plus.svg);
+}
+
+.accordion-link{
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: #9a9a9a;
+}
+.accordion-link:hover{
+	text-decoration-color: #f7af8e;
+}
+.accordion-list li {
+	
+	padding: 0.4em;
+
+}
+
 /*Index section one - Table________________MARTIN*/
 
 /*Index Section two - buttons og links_____REBEKKA*/
