@@ -7,11 +7,19 @@ body {
 	grid-template-rows: auto 1fr auto;
 	position: relative;
 }
-
 h2, h3, a, p, li, table{
     font-family: Arial, Helvetica, sans-serif;
 }
 a {
+	text-decoration: none;
+	color: #000;
+}
+nav a:hover, footer a:hover {
+	font-weight: bolder;
+  }
+a:visited { /* footer links, besøkt*/
+	color: #000000;
+	background-color: transparent;
 	text-decoration: none;
 }
 h1 {
@@ -22,11 +30,25 @@ h1 {
     font-size: 3vw;
 	text-transform: uppercase;
 }
+h2{
+	font-family: "arial black";
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+p {
+	font-size: 1em;
+}
+
+h2 + p {
+	font-size: 1.25em;
+}
+nav, header,footer {
+	background-color: #FFF4BC;
+}
 
 
 /*NAV*/
 nav {
-	background-color: #FFF4BC;
 	position: sticky;
 	top: 0;
 	padding: 1em 5em;
@@ -94,7 +116,6 @@ Example complete page 2: Hamburger menu)*/
 	align-items: center;
 	width: 100%;
 	height: fit-content;
-	background-color: #FFF4BC;
 }
 .header-row{
 	display: flex;
@@ -103,7 +124,6 @@ Example complete page 2: Hamburger menu)*/
 	padding: 2vw;
 	margin-bottom: 20px;
 	border-bottom: 1px solid rgb(81, 81, 81);
-
 }
 .title-box, .title-img {
 	flex: 1;
@@ -124,15 +144,12 @@ Example complete page 2: Hamburger menu)*/
 		width: 100%;
   	}
 	  .title-img img{
-
 		max-height: 200px;
 	}
 }
 
 
-
-
-  /* General table styling */
+  /* General header table styling */
 .header-table {
 	width: 80%;
 	margin: 0 auto;
@@ -200,58 +217,48 @@ Example complete page 2: Hamburger menu)*/
 
 /*Index section one - Accordion____________SIMEN*/
 
-.sectionSimen{
-
+.main-section{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	padding-left: 25em;
-	padding-right: 20em;
+	padding:5em 5em;
 }
-
-.sectionSimen div {
+.accordion-header, .accordion-content{
+	width: 60%;
+}
+.accordion-header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
-
 details{
-	font-size: 1.6em;
+	font-size: 1em;
 	font-family: Arial, Helvetica, sans-serif;
 	letter-spacing: 0.05em;
-	padding: 0.9em;
-	border-bottom: solid;
-	border-color: rgb(207, 207, 207);
+	padding: 1em 0.8em;
+	/* border-bottom: 0.5px solid;
+	border-color: rgb(207, 207, 207); */
 
 }
-
+details:hover {
+	cursor: pointer;
+  }
 summary{
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	font-size: 2em;
-	
+	font-size: 1em;
 }
-
 details > summary {
 	list-style-image: url(../media/minus.svg);
 }
-
-details details {
-
-	font-size: 0.7em;
-	padding: 0.4em;
-}
-
 details:not([open]) summary{
-	font-size: 1.6em;
+	font-size: 1em;
 	font-weight: normal;
 	list-style-image: url(../media/plus.svg);
 }
-
 .accordion-link{
 	color: black;
 	text-decoration: underline;
@@ -261,25 +268,18 @@ details:not([open]) summary{
 	text-decoration-color: #f7af8e;
 }
 .accordion-list li {
-	
 	padding: 0.4em;
-
 }
 
 /*Index section one - Table________________MARTIN*/
-table  {
-	width: 100%;
-	border-collapse: collapse;
-	margin-bottom: 20px;
-	background-color: #f9f9f9;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
-th, td {
-	border: 1px solid #000;
-	padding: 12px;
+.studieoversikt-color-index th,
+.studieoversikt-color-index td,
+.studieoversikt th,
+.studieoversikt td {
+    border: 1px solid #cfcfcf;
+    padding: 12px;
 }
-
 td:empty {
 	height: 1px;
 }
@@ -305,18 +305,10 @@ td:empty {
 height: 3px;
 }
 
-.studieoversikt-color-index{
-	margin-left: 30px;
-	margin-right: auto;
-	width: 25%;
-	text-align:left;
-	white-space: nowrap;
-}
-
 .studieoversikt {
-	margin-left: 30px;
-	margin-right: auto;
-	width: 60%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
 	text-align: center;
 }
 
@@ -324,11 +316,7 @@ height: 3px;
 
 We might want to move the h2 up at the top, unless someone else has added it as well.
 Just put it here as to not make a mess.*/
-h2{
-	font-family: "arial black";
-    font-size: 1.75em;
-    text-transform: uppercase;
-}
+
 .button-section{
     margin: auto;
     text-align: center;
@@ -375,8 +363,7 @@ footer{
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.0em;
-	background-color:#FFF4BC;
-	color:#000000;
+	
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.2em;/*se om denne skal endres*/
 }
@@ -394,12 +381,6 @@ footer{
 	line-height: 1.3em;
 }
 
-a:link {  /* footer links*/
-	color:#000000;
-	background-color: transparent;
-	text-decoration: none;
-	/*font-weight: bold;*/
-}
 
 .kontakt {  /* footer links, kontakt*/
 	color:#000000;
@@ -410,11 +391,6 @@ a:link {  /* footer links*/
 	padding-bottom: 0.625em;
 }
 
-a:visited { /* footer links, besøkt*/
-	color: #000000;
-	background-color: transparent;
-	text-decoration: none;
-}
 
 .footer-item1 img{ /* OsloMet Logo*/
 	max-height: 3.0em;
