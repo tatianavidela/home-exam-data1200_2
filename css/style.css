@@ -80,11 +80,12 @@ Example complete page 2: Hamburger menu)*/
 .title-box, .title-img {
 	flex: 1;
 	width: 50%;
+	max-height: 22rem;
 } 
 .title-img img{
 	object-fit: cover;
 	width: 100%;
-	max-height: 300px;
+	max-height: 100%;
 }
 
   /* Header table styling */
@@ -160,12 +161,14 @@ details:not([open]) summary{
 
 /*_______________table*/
 
-.studieoversikt-color-index th,
 .studieoversikt-color-index td,
 .studieoversikt th,
 .studieoversikt td {
-    border: 1px solid #cfcfcf;
-    padding: 12px;
+ 	border: 1px solid #cfcfcf;
+	
+}
+.studieoversikt-color-index, .studieoversikt-color-index td, .studieoversikt th{
+	font-size: 0.8em;
 }
 td:empty {
 	height: 1px;
@@ -193,8 +196,11 @@ height: 3px;
 .studieoversikt {
 	border-collapse: collapse;
 	margin-bottom: 20px;
-	background-color: #f9f9f9;
 	text-align: center;
+	
+}
+.studieoversikt td {
+	font-size: 0.5em;
 }
 
 /*_______________buttons*/
@@ -231,52 +237,38 @@ a.button:hover{
 
 footer{
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content:space-around;
+	align-items: flex-start;
 	padding: 1.0em;
 
 }
-
-.footer-item{
-	padding: 0.625em;
-	list-style-type: none;
-	line-height: 2.5em;
+footer ul{
+list-style-type: none;
+padding-left: 0;
 }
-
-.footer-item1 {
-	padding: 0.625em;
-	padding-top: 1.0em;
-	list-style-type: none;
-	line-height: 1.3em;
+.footer-links li{
+	padding: 1rem;
 }
-
-
-.kontakt {  /* footer links, kontakt*/
-	color:#000000;
-	background-color: transparent;
-	text-decoration: none;
-	font-weight:bold;
-	line-height: 1.5em;
-	padding-bottom: 0.625em;
+.footer-contact{
+	padding:2rem;
 }
-
-.footer-item1 img{ /* OsloMet Logo*/
-	max-height: 3.0em;
-	max-width: 15.0em;
-	padding-bottom: 2.0em;
+.footer-contact img{ /* OsloMet Logo*/
+	max-height: 2em;
+	margin-bottom: 2rem;
+}
+.footer-contact ul {
+	padding-left: 0;
 }
 
 .footer-item4-icon img{ /*SoMe icons*/
-	max-height: 1.0em;
-	padding-bottom: 0.0em;
-	padding-left:12em;
+	max-height: 1em;
 }
 
-.footer-item4_IMG{ /*Abonner på vårt nyhetsbrev*/
+/* .footer-item4_IMG{ 
 	height: 3.0rem;
 	width: auto	;
 	padding-bottom: 1.0em;
-}
+} */
 
 /*MEDIA QUERIES*/
 
