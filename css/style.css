@@ -287,7 +287,8 @@ padding-left: 0;
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
+	
 	/*Header*/
     .header-row {
       flex-direction: column;
@@ -303,6 +304,10 @@ padding-left: 0;
 }
 
 @media (max-width: 700px){
+	/*Nav*/
+	.logo {
+		width: 6em;
+	}
 	/*hamburger menu*/
 	.menu {
 		list-style-type: none;
