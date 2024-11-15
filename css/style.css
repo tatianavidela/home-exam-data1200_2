@@ -79,13 +79,12 @@ Example complete page 2: Hamburger menu)*/
 }
 .title-box, .title-img {
 	flex: 1;
-	width: 50%;
 	max-height: 22rem;
 } 
 .title-img img{
-	object-fit: cover;
-	width: 100%;
-	max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
   /* Header table styling */
@@ -112,10 +111,10 @@ Example complete page 2: Hamburger menu)*/
 	align-content: center;
 	padding:1rem 5rem;
 }
-.accordion-header, .accordion-content{
+.section-header, .accordion-content{
 	max-width: 60%;
 }
-.accordion-header {
+.section-header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -207,7 +206,7 @@ height: 3px;
 .button-section{
     margin: auto;
     text-align: center;
-    max-width: 40%;
+    max-width: 500px;
 }
 /* <a> tag (hyperlink) that looks like button*/
 a.button {
@@ -285,38 +284,39 @@ padding-left: 0;
 		padding:1em 2em;
 		min-width: 100px;
 	}
+	
 }
 
-@media (max-width: 400px) {
-	/*Header*/
-    .header-row {
-      flex-direction: column;
-	  align-items: center;
-    }
-	.title-box, .title-img {
-		flex: 1;
-		width: 100%;
-  	}
-	  .title-img img{
-		max-height: 200px;
-	}
-}
 
 @media (max-width: 700px){
+
+	.main-section{
+		padding: 1rem 2rem;
+	}
+	.section-header, .accordion-content {
+		max-width: 90%;
+	}
+	/*Nav*/
+	.logo {
+		width: 6em;
+	}
+	nav {
+		padding: 2rem 6rem;
+	}
 	/*hamburger menu*/
 	.menu {
 		list-style-type: none;
         position: absolute;
 		right: 0;
-		padding-right: 2em;
+		padding-right: 4em;
         background-color: #FFF4BC;
 	}
 	.menu-icon {
 		display: block;
 		background-image:url(../media/hamburger-menu.svg);
 		background-size: cover;
-		height: 40px;
-		width: 40px;
+		height: 60px;
+		width: 60px;
 	}
 	.menu li {
 		height: 0px;
@@ -329,6 +329,21 @@ padding-left: 0;
 		padding-bottom: 2em;
 
 	} 
+	/*Header*/
+    .header-row {
+		flex-direction: column;
+		align-items: center;
+	  }
+	  .title-box, .title-img {
+		  flex: 1;
+		  width: 100%;
+		}
+		.title-img img{
+		  max-height: 320px;
+	  }
+	  .button-section {
+		max-width: 80%;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -367,5 +382,13 @@ padding-left: 0;
 		font-weight: bold;
 		display: block;
 		margin-bottom: 5px;
+	}
+}
+@media (min-width: 700px) and (max-width: 1300px){
+	h1{
+		font-size: 1.8em;
+	}
+	.title-box, .title-img {
+		max-height: 14rem;
 	}
 }
