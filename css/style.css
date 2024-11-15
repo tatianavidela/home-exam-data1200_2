@@ -112,7 +112,7 @@ Example complete page 2: Hamburger menu)*/
 	padding:1rem 5rem;
 }
 .section-header, .accordion-content{
-	max-width: 60%;
+	max-width: 800px;
 }
 .section-header {
 	display: flex;
