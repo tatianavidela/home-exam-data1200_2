@@ -470,3 +470,7 @@ a:visited { /* footer links, besøkt*/
 	margin-top: 10px; /* Space between the image and caption */
 	font-style: italic; /* Optional: style the caption */
 }
+
+#git-overskrift {
+	text-align: center;
+}
