@@ -435,42 +435,79 @@ a:visited { /* footer links, besøkt*/
 }
 
 /*Github -- MARTIN */
+
+.github-wrapper {
+	width: 100%;
+	padding-top: 3em;
+}
+
 .github-overskrift {
-	text-align: center;
-}
-
-.github-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 20px;
-}
-
-.github-container article {
 	display: flex;
-	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.github-media-grid-container {
+	display: grid;
+	width: min-content;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-content: center;
+	row-gap: 1em;
+	column-gap: 6em;
+	grid-auto-flow: row;
+
+}
+
+.github-media-grid-item {
+
+}
+
+.github-media-grid-container figcaption {
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.github-text-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3em;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 	align-items: center;
-	margin: 1em;  /* se over her*/
+	justify-items: center;
 }
 
-.github-container figure {
+.github-text-item {
+	align-content: center;
 	text-align: left;
-	margin: 0;
-	padding: 1em;
-
+	width: 80%;
 }
 
-.github-container img {
-	display: block;
-	margin: 0 auto;
-	max-width: 100%; /* Make the images responsive */
-	height: auto; /* Maintain aspect ratio */
+.github-text-item p{
+	font-size: 16pt;
 }
 
-.github-container figcaption {
-	margin-top: 10px; /* Space between the image and caption */
-	font-style: italic; /* Optional: style the caption */
+.github-h3 {
+	text-align: left;
 }
 
-#git-overskrift {
+.github-text-ingress {
+	align-content: center;
 	text-align: center;
 }
+
+.github-text-ingress h2{
+	font-size: 36pt;
+}
+
+.github-text-ingress p {
+	font-size: 18pt;
+}
+
+
+
