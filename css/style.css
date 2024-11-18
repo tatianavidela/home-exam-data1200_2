@@ -232,12 +232,30 @@ a.button:hover{
     padding-top:0.2em;
 }
 /*_____________________Index article___________________________*/
-.index-article{
+.index-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 	background-color: #FFF4BC;
 }
-.index-article img{
-	max-height: 300px;
+
+.index-article img {
+    max-width: 40%; 
+    height: 100%; 
 }
+
+.index-article-paragraf{
+
+	padding-left: 2em;
+
+}
+
+.index-article-paragraf a:hover{
+	text-decoration: underline black;
+}
+
+.index-article-paragraf
+
 /*Footer___________________________________JULIE*/
 
 footer{
