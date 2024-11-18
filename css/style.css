@@ -231,13 +231,12 @@ a.button:hover{
     padding-right: 0.6em;
     padding-top:0.2em;
 }
-/*Index article*/
+/*_____________________Index article___________________________*/
 .index-article{
 	background-color: #FFF4BC;
 }
 .index-article img{
-	max-height: 200px;
-	float: right;
+	max-height: 300px;
 }
 /*Footer___________________________________JULIE*/
 
