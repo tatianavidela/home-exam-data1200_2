@@ -231,13 +231,31 @@ a.button:hover{
     padding-right: 0.6em;
     padding-top:0.2em;
 }
-/*Index article*/
-.index-article{
+/*_____________________Index article___________________________*/
+.index-article {
+    display: flex;
+    align-items: center;
 	background-color: #FFF4BC;
+	margin-bottom: 3em;
 }
-.index-article img{
-	max-height: 200px;
-	float: right;
+
+.index-article img {
+    width: 40%; 
+    height: auto; 
+}
+
+.index-article-paragraf{
+    padding-left: 2em;
+	padding: 2em;
+
+}
+
+.index-article-paragraf a:hover{
+	text-decoration: underline black;
+}
+
+.teknologi-design-link{
+	text-decoration: underline black;
 }
 /*Footer___________________________________JULIE*/
 
@@ -288,8 +306,17 @@ padding-left: 0;
 		font-size: 1em;
 	}
 	details:not([open]) summary, summary, details {
-		font-size: 1em;}
-		
+		font-size: 1em;
+	}
+	.index-article {
+		display: block;
+		text-align: left;
+	}
+
+	.index-article img{
+		width: 100%;
+		margin-top: 0.3em;
+	}	
 	footer{
 		flex-direction: column;
 	}
