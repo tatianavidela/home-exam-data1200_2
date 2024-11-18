@@ -245,8 +245,8 @@ a.button:hover{
 }
 
 .index-article-paragraf{
-
-	padding-left: 2em;
+    padding-left: 2em;
+	padding: 2em;
 
 }
 
@@ -254,7 +254,9 @@ a.button:hover{
 	text-decoration: underline black;
 }
 
-.index-article-paragraf
+.teknologi-design-link{
+	text-decoration: underline black;
+}
 
 /*Footer___________________________________JULIE*/
 
