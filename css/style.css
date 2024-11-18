@@ -60,7 +60,6 @@ Example complete page 2: Hamburger menu)*/
 	display: none;
 }
 
-
 /*HEADER*/
 .header-wrapper{
 	display: flex;
@@ -80,7 +79,6 @@ Example complete page 2: Hamburger menu)*/
 }
 .title-box, .title-img {
 	flex: 1;
-
 	max-height: 22rem;
 } 
 .title-img img{
@@ -103,7 +101,6 @@ Example complete page 2: Hamburger menu)*/
 	padding: 8px;
 	text-align: center;
 }
-
 
 /* MAIN SECTION*/
 .main-section{
@@ -139,9 +136,7 @@ summary:hover {
 summary{
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-
 	font-size: 1.2em;
-
 }
 details > summary {
 	list-style-image: url(../media/minus.svg);
@@ -160,7 +155,6 @@ details:not([open]) summary{
 	text-decoration-color: #f7af8e;
 }
 .accordion-list li {
-
 	padding: 0.4em;
 }
 
@@ -215,7 +209,6 @@ height: 3px;
     max-width: 500px;
 }
 /* <a> tag (hyperlink) that looks like button*/
-
 a.button {
     border: 0.1em solid #9a9a9a;
     border-radius: 0.6em;
@@ -227,7 +220,6 @@ a.button {
     margin: 2rem auto;
     line-height: 1.6;
     transition-duration: 0.2s;
-
 }
 a.button:hover{
     border: 0.1em solid #F7AF8E;
@@ -282,7 +274,6 @@ padding-left: 0;
 	height: 3.0rem;
 	width: auto	;
 	padding-bottom: 1.0em;
-
 } */
 
 /*MEDIA QUERIES*/
@@ -425,4 +416,3 @@ padding-left: 0;
 		max-height: 14rem;
 	}
 }
-
