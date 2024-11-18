@@ -1,5 +1,5 @@
 
-/*General - styles that are repeated across pages*/
+/* GENERAL- styles that are repeated across pages and sections*/
 body {
 	min-height: 100vh;
 	margin: 0px;
@@ -7,29 +7,45 @@ body {
 	grid-template-rows: auto 1fr auto;
 	position: relative;
 }
-
 h2, h3, a, p, li, table{
     font-family: Arial, Helvetica, sans-serif;
 }
 a {
 	text-decoration: none;
+	color: #000;
 }
+nav a:hover, footer a:hover {
+	font-weight: bolder;
+  }
 h1 {
 	margin: 0;
-    font-family: owners-wide, sans-serif;
+    font-family: owners-wide,Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3vw;
+    font-size: 3em;
 	text-transform: uppercase;
 }
-
+h2{
+	font-family: "arial black";
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+p {
+	font-size: 1em;
+	line-height: 1.6;
+}
+h1 +p, h2 + p {
+	font-size: 1.3em;
+}
+nav, header,footer {
+	background-color: #FFF4BC;
+}
 
 /*NAV*/
 nav {
-	background-color: #FFF4BC;
 	position: sticky;
 	top: 0;
-	padding: 1em 5em;
+	padding: 1rem 4rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -38,54 +54,12 @@ nav {
 .logo {
 	width: 4em;
 }
-
-/*Hamburger toggle (code from canvas module: grid layout and complete page,
+/*Hamburger toggle (code from canvas module: grid layout and complete page, 
 Example complete page 2: Hamburger menu)*/
-
 #hamburger-toggle{
 	display: none;
 }
 
-@media (min-width:701px){
-	.menu{
-		display: flex;
-		flex-direction: row;
-		list-style-type: none;
-	}
-
-	.menu li{
-		padding:1em 2em;
-	}
-}
-
-@media (max-width: 700px){
-	.menu {
-		list-style-type: none;
-        position: absolute;
-		right: 0;
-		padding-right: 2em;
-        background-color: #FFF4BC;
-	}
-
-	.menu-icon {
-		display: block;
-		background-image:url(../media/hamburger-menu.svg);
-		background-size: cover;
-		height: 40px;
-		width: 40px;
-	}
-	.menu li {
-		height: 0px;
-		overflow: hidden;
-	}
-	#hamburger-toggle:checked ~ .menu li {
-		height: 1rem;
-		width: auto;
-		padding-top: 2em;
-		padding-bottom: 2em;
-
-	}
-}
 
 /*HEADER*/
 .header-wrapper{
@@ -94,7 +68,7 @@ Example complete page 2: Hamburger menu)*/
 	align-items: center;
 	width: 100%;
 	height: fit-content;
-	background-color: #FFF4BC;
+	padding-bottom: 2rem;
 }
 .header-row{
 	display: flex;
@@ -103,155 +77,80 @@ Example complete page 2: Hamburger menu)*/
 	padding: 2vw;
 	margin-bottom: 20px;
 	border-bottom: 1px solid rgb(81, 81, 81);
-
 }
 .title-box, .title-img {
 	flex: 1;
-	width: 50%;
-}
+
+	max-height: 22rem;
+} 
 .title-img img{
-	object-fit: cover;
-	width: 100%;
-	max-height: 300px;
-}
-@media (max-width: 700px) {
-    .header-row {
-      flex-direction: column;
-	  align-items: center;
-    }
-	.title-box, .title-img {
-		flex: 1;
-		width: 100%;
-  	}
-	  .title-img img{
-
-		max-height: 200px;
-	}
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
-
-
-
-  /* General table styling */
+  /* Header table styling */
 .header-table {
 	width: 80%;
-	margin: 0 auto;
+	padding: 1em;
 }
-
 .header-table table {
 	width: 100%;
 	border-collapse: collapse;
 	table-layout: fixed;
 }
-
 .header-table table, td, th {
-	margin: 20px auto;
 	padding: 8px;
 	text-align: center;
 }
 
 
-/* Responsive styling for screen widths smaller than 1000px */
-@media screen and (max-width: 1000px) {
-
-	.header-table{
-		width: 90%;
-	}
-	.header-table table,
-	.header-table thead,
-	.header-table tbody,
-	.header-table th,
-	.header-table td,
-	.header-table tr {
-		display: block;
-	}
-
-	.header-table thead {
-		display: none; /* Hide original table header */
-	}
-
-	.header-table tr {
-		display: grid;
-		grid-template-columns: 1fr 1fr; /* Two-column layout */
-		gap: 10px;
-		margin-bottom: 15px;
-		padding: 10px;
-	}
-
-	.header-table td {
-		display: block;
-		width: 100%;
-		padding: 8px;
-	}
-
-	.header-table td:last-child {
-		border-bottom: none;
-	}
-
-	/* Display header as a label on top of each data cell */
-	.header-table td:before {
-		content: attr(data-label);
-		font-weight: bold;
-		display: block;
-		margin-bottom: 5px;
-	}
-}
-
-
-/*Index section one - Accordion____________SIMEN*/
-
-.sectionSimen{
-
+/* MAIN SECTION*/
+.main-section{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-content: center;
-	padding-left: 25em;
-	padding-right: 20em;
+	padding:1rem 5rem;
 }
-
-.sectionSimen div {
+.section-header, .accordion-content{
+	max-width: 800px;
+}
+.section-header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-
-
+.accordion-content{
+	padding-bottom: 2rem;
+	border-bottom: 1px solid rgb(81, 81, 81);
+}
 details{
-	font-size: 1.6em;
+	font-size: 1.2em;
 	font-family: Arial, Helvetica, sans-serif;
 	letter-spacing: 0.05em;
-	padding: 0.9em;
-	border-bottom: solid;
-	border-color: rgb(207, 207, 207);
-
+	padding: 1em 0.8em;
 }
-
+summary:hover {
+	cursor: pointer;
+  }
 summary{
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
-	font-size: 2em;
+
+	font-size: 1.2em;
 
 }
-
 details > summary {
 	list-style-image: url(../media/minus.svg);
 }
-
-details details {
-
-	font-size: 0.7em;
-	padding: 0.4em;
-}
-
 details:not([open]) summary{
-	font-size: 1.6em;
+	font-size: 1.2em;
 	font-weight: normal;
 	list-style-image: url(../media/plus.svg);
 }
-
 .accordion-link{
 	color: black;
 	text-decoration: underline;
@@ -263,28 +162,22 @@ details:not([open]) summary{
 .accordion-list li {
 
 	padding: 0.4em;
-
 }
 
-/*Index section one - Table________________MARTIN*/
-table  {
-	width: 100%;
-	border-collapse: collapse;
-	margin-bottom: 20px;
-	background-color: #f9f9f9;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+/*_______________table*/
 
-th, td {
-	border: 1px solid #000;
-	padding: 12px;
+.studieoversikt-color-index td,
+.studieoversikt th,
+.studieoversikt td {
+ 	border: 1px solid #cfcfcf;
+	
 }
-
+.studieoversikt-color-index, .studieoversikt-color-index td, .studieoversikt th{
+	font-size: 0.8em;
+}
 td:empty {
 	height: 1px;
 }
-
-
 .rowcolor-fellesfag {
 	background-color: #FFF7D3;
 }
@@ -305,206 +198,231 @@ td:empty {
 height: 3px;
 }
 
-.studieoversikt-color-index{
-	margin-left: 30px;
-	margin-right: auto;
-	width: 25%;
-	text-align:left;
-	white-space: nowrap;
-}
-
 .studieoversikt {
-	margin-left: 30px;
-	margin-right: auto;
-	width: 60%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
 	text-align: center;
+	
+}
+.studieoversikt td {
+	font-size: 0.5em;
 }
 
-/*Index Section two - buttons og links_____REBEKKA
-
-We might want to move the h2 up at the top, unless someone else has added it as well.
-Just put it here as to not make a mess.*/
-h2{
-	font-family: "arial black";
-    font-size: 1.75em;
-    text-transform: uppercase;
-}
+/*_______________buttons*/
 .button-section{
     margin: auto;
     text-align: center;
-    max-width: 55%;
-    min-width: 440px;
+    max-width: 500px;
 }
 /* <a> tag (hyperlink) that looks like button*/
-a.button{
-	background-color: white;
-  border: 0.1em solid #9a9a9a;
-  border-radius: 0.6em;
-  padding: 0.9em 1.6em;
-  font-family: Arial;
-  color: black;
-  text-decoration: none;
-  font-size: 1.24em;
-  text-align: left;
-  position:inherit;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3em;
-  margin-top: 0.6em;
-  /*Margin top endrer seg ikke hos meg? Men det funka på testeren min, så får finne ut om den bare bugger evt*/
-  line-height: 1.6;
-  transition-duration: 0.4s;
-  width: 80%;
-  min-width: 420px;
+
+a.button {
+    border: 0.1em solid #9a9a9a;
+    border-radius: 0.6em;
+    padding: 1rem;
+    font-size: 1em;
+    text-align: left;
+    position: inherit;
+    display: block;
+    margin: 2rem auto;
+    line-height: 1.6;
+    transition-duration: 0.2s;
+
 }
 a.button:hover{
     border: 0.1em solid #F7AF8E;
+	box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.092);
 }
-.buttonimg{
+.button-img{
     float: left;
     height: 6em;
     padding-right: 0.6em;
     padding-top:0.2em;
 }
-
+/*Index article*/
+.index-article{
+	background-color: #FFF4BC;
+}
+.index-article img{
+	max-height: 200px;
+	float: right;
+}
 /*Footer___________________________________JULIE*/
 
 footer{
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content:space-around;
+	align-items: flex-start;
 	padding: 1.0em;
-	background-color:#FFF4BC;
-	color:#000000;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1.2em;/*se om denne skal endres*/
-}
 
-.footer-item{
-	padding: 0.625em;
-	list-style-type: none;
-	line-height: 2.5em;
 }
-
-.footer-item1 {
-	padding: 0.625em;
-	padding-top: 1.0em;
-	list-style-type: none;
-	line-height: 1.3em;
+footer ul{
+list-style-type: none;
+padding-left: 0;
 }
-
-a:link {  /* footer links*/
-	color:#000000;
-	background-color: transparent;
-	text-decoration: none;
-	/*font-weight: bold;*/
+.footer-links li{
+	padding: 1rem;
 }
-
-.kontakt {  /* footer links, kontakt*/
-	color:#000000;
-	background-color: transparent;
-	text-decoration: none;
-	font-weight:bold;
-	line-height: 1.5em;
-	padding-bottom: 0.625em;
+.footer-contact{
+	padding:2rem;
 }
-
-a:visited { /* footer links, besøkt*/
-	color: #000000;
-	background-color: transparent;
-	text-decoration: none;
+.footer-contact img{ /* OsloMet Logo*/
+	max-height: 2em;
+	margin-bottom: 2rem;
 }
-
-.footer-item1 img{ /* OsloMet Logo*/
-	max-height: 3.0em;
-	max-width: 15.0em;
-	padding-bottom: 2.0em;
+.footer-contact ul {
+	padding-left: 0;
 }
 
 .footer-item4-icon img{ /*SoMe icons*/
-	max-height: 1.0em;
-	padding-bottom: 0.0em;
-	padding-left:12em;
+	max-height: 1em;
 }
 
-.footer-item4_IMG{ /*Abonner på vårt nyhetsbrev*/
+/* .footer-item4_IMG{ 
 	height: 3.0rem;
 	width: auto	;
 	padding-bottom: 1.0em;
-}
 
-/*Github -- MARTIN */
+} */
 
-.github-wrapper {
-	width: 100%;
-	padding-top: 3em;
-}
+/*MEDIA QUERIES*/
+@media (max-width:400px){
+	h1{
+		font-size: 2em;
+	}
+	h2{
+		font-size: 1.2em;
+	}
+	h1 +p, h2 + p {
+		font-size: 1em;
+	}
+	details:not([open]) summary, summary, details {
+		font-size: 1em;}
+		
+	footer{
+		flex-direction: column;
+	}
+} 
 
-.github-overskrift {
-	display: flex;
-	text-align: center;
-	justify-content: center;
-}
-
-.github-media-grid-container {
-	display: grid;
-	width: min-content;
-	margin-left: auto;
-	margin-right: auto;
-	grid-template-columns: 1fr 1fr;
-	justify-content: center;
-	align-content: center;
-	row-gap: 1em;
-	column-gap: 6em;
-	grid-auto-flow: row;
-}
-
-.github-media-grid-item {
-}
-
-.github-media-grid-container figcaption {
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.github-text-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 3em;
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	align-items: center;
-	justify-items: center;
-}
-
-.github-text-item {
-	align-content: center;
-	text-align: left;
-	width: 80%;
-}
-
-.github-text-item p{
-	font-size: 16pt;
-}
-
-.github-h3 {
-	text-align: left;
-}
-
-.github-text-ingress {
-	align-content: center;
-	text-align: center;
-}
-
-.github-text-ingress h2{
-	font-size: 36pt;
-}
-
-.github-text-ingress p {
-	font-size: 18pt;
+@media (min-width:701px){
+	/*hamburger menu*/
+	.menu{
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		padding: 0;
+		list-style-type: none;
+	}
+	.menu li{
+		padding:1em 2em;
+		min-width: 100px;
+	}
+	
 }
 
 
+@media (max-width: 700px){
+
+	.main-section{
+		padding: 1rem 1rem;
+	}
+	.section-header, .accordion-content {
+		max-width: 90%;
+	}
+	/*Nav*/
+	.logo {
+		width: 4em;
+	}
+	nav {
+		padding: 1rem 3rem;
+	}
+	/*hamburger menu*/
+	.menu {
+		list-style-type: none;
+        position: absolute;
+		right: 0;
+		padding-right: 4em;
+        background-color: #FFF4BC;
+	}
+	.menu-icon {
+		display: block;
+		background-image:url(../media/hamburger-menu.svg);
+		background-size: cover;
+		height: 50px;
+		width: 50px;
+	}
+	.menu li {
+		height: 0px;
+		overflow: hidden;
+	}
+	#hamburger-toggle:checked ~ .menu li {
+		height: 1rem;
+		width: auto;
+		padding-top: 2em;
+		padding-bottom: 2em;
+
+	} 
+	/*Header*/
+    .header-row {
+		flex-direction: column;
+		align-items: center;
+	  }
+	  .title-box, .title-img {
+		  flex: 1;
+		  width: 100%;
+		}
+		.title-img img{
+		  max-height: 320px;
+	  }
+	  .button-section {
+		max-width: 80%;
+	}
+}
+
+@media (max-width: 1000px) {
+	/*Header table s*/
+	.header-table{
+		width: 90%;
+	}
+	.header-table table,
+	.header-table thead,
+	.header-table tbody,
+	.header-table th,
+	.header-table td,
+	.header-table tr {
+		display: block;
+	}
+	.header-table thead {
+		display: none; 
+	}
+	.header-table tr {
+		display: grid;
+		grid-template-columns: 1fr 1fr; 
+		gap: 10px;
+		margin-bottom: 15px;
+		padding: 10px;
+	}
+	.header-table td {
+		display: block;
+		width: 100%;
+		padding: 8px;
+	}
+	.header-table td:last-child {
+		border-bottom: none;
+	}
+	.header-table td:before {
+		content: attr(data-label);
+		font-weight: bold;
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+@media (min-width: 700px) and (max-width: 1300px){
+	h1{
+		font-size: 1.8em;
+	}
+	.title-box, .title-img {
+		max-height: 14rem;
+	}
+}
 
