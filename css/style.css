@@ -234,14 +234,13 @@ a.button:hover{
 /*_____________________Index article___________________________*/
 .index-article {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 	background-color: #FFF4BC;
 }
 
 .index-article img {
-    max-width: 40%; 
-    height: 100%; 
+    width: 40%; 
+    height: auto; 
 }
 
 .index-article-paragraf{
@@ -433,5 +432,17 @@ padding-left: 0;
 	}
 	.title-box, .title-img {
 		max-height: 14rem;
+	}
+}
+
+@media (max-width: 400px){
+	.index-article {
+		display: block;
+		text-align: left;
+	}
+
+	.index-article img{
+		width: 100%;
+		margin-top: 0.3em;
 	}
 }
