@@ -42,7 +42,7 @@ nav, header,footer {
 }
 
 /*NAV*/
-nav {
+.main-nav {
 	position: sticky;
 	top: 0;
 	padding: 1rem 4rem;
@@ -311,7 +311,6 @@ padding-left: 0;
 	
 }
 
-
 @media (max-width: 700px){
 
 	.main-section{
@@ -324,7 +323,7 @@ padding-left: 0;
 	.logo {
 		width: 4em;
 	}
-	nav {
+	.main-nav {
 		padding: 1rem 3rem;
 	}
 	/*hamburger menu*/
@@ -415,4 +414,107 @@ padding-left: 0;
 	.title-box, .title-img {
 		max-height: 14rem;
 	}
+}
+
+/*ACTIVITY PAGE*/
+@media (max-width: 768px) {
+	.activity-article-container p {
+		flex: 1 1 100%;
+	}
+	.nav-activity {
+		padding: 0.5rem 2rem;
+	}
+}
+
+.activity-page-body{
+	font-family: Helvetica,Arial, sans-serif;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color:#000000;
+	color:#fff;
+}
+.nav-activity{
+	position: sticky;
+	top: 0;
+	padding: 1rem 4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000000;
+	z-index: 1;
+}
+.nav-activity a{
+	text-decoration: none;
+	color:#ffffff;
+}
+.activity-header {
+	background-image: url(/media/APHeaderbildeSD.jpg); /* https://www.pexels.com/nb-no/bilde/dagslys-idrett-mennesker-park-2894/*/
+	position: relative;
+	height: 800px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center center;
+}
+.activity-h1{
+	font-family: Impact, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 20vw;
+	color: black;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.activity-article-container h2{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px; /* Begrens tekstbredden for lesbarhet */
+	line-height: 1.6; /* Bedre lesbarhet med linjehøyde */
+}
+.activity-article-container h3{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	line-height: 1.6;
+}
+.activity-article-container{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap; /*makes sure it's responsive*/
+	align-items: flex-start;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	line-height: 1.6;
+}
+.activity-article-container a{
+	color: crimson;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	line-height: 1.6;
+}
+.activity-article-container p {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	line-height: 1.6;
+}
+.activity-article-container ul{
+	list-style-type:none;
+	padding-left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+	line-height: 1.6;
+}
+.activity-article-container img{
+	flex: 1 1 40%;
+	max-width: 100%;
+	height: auto;
+}
+.footer-activity{
+	background-color: #000000;
+	color: #fff;
 }
