@@ -39,7 +39,7 @@ nav {
 	width: 4em;
 }
 
-/*Hamburger toggle (code from canvas module: grid layout and complete page, 
+/*Hamburger toggle (code from canvas module: grid layout and complete page,
 Example complete page 2: Hamburger menu)*/
 
 #hamburger-toggle{
@@ -66,7 +66,7 @@ Example complete page 2: Hamburger menu)*/
 		padding-right: 2em;
         background-color: #FFF4BC;
 	}
-	
+
 	.menu-icon {
 		display: block;
 		background-image:url(../media/hamburger-menu.svg);
@@ -84,7 +84,7 @@ Example complete page 2: Hamburger menu)*/
 		padding-top: 2em;
 		padding-bottom: 2em;
 
-	} 
+	}
 }
 
 /*HEADER*/
@@ -108,7 +108,7 @@ Example complete page 2: Hamburger menu)*/
 .title-box, .title-img {
 	flex: 1;
 	width: 50%;
-} 
+}
 .title-img img{
 	object-fit: cover;
 	width: 100%;
@@ -165,7 +165,7 @@ Example complete page 2: Hamburger menu)*/
 	.header-table tr {
 		display: block;
 	}
-	
+
 	.header-table thead {
 		display: none; /* Hide original table header */
 	}
@@ -177,17 +177,17 @@ Example complete page 2: Hamburger menu)*/
 		margin-bottom: 15px;
 		padding: 10px;
 	}
-	
+
 	.header-table td {
 		display: block;
 		width: 100%;
 		padding: 8px;
 	}
-	
+
 	.header-table td:last-child {
 		border-bottom: none;
 	}
-	
+
 	/* Display header as a label on top of each data cell */
 	.header-table td:before {
 		content: attr(data-label);
@@ -233,7 +233,7 @@ summary{
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	font-size: 2em;
-	
+
 }
 
 details > summary {
@@ -261,7 +261,7 @@ details:not([open]) summary{
 	text-decoration-color: #f7af8e;
 }
 .accordion-list li {
-	
+
 	padding: 0.4em;
 
 }
@@ -337,8 +337,8 @@ h2{
 }
 /* <a> tag (hyperlink) that looks like button*/
 a.button{
-	background-color: white; 
-  border: 0.1em solid #9a9a9a; 
+	background-color: white;
+  border: 0.1em solid #9a9a9a;
   border-radius: 0.6em;
   padding: 0.9em 1.6em;
   font-family: Arial;
@@ -458,16 +458,13 @@ a:visited { /* footer links, besøkt*/
 	row-gap: 1em;
 	column-gap: 6em;
 	grid-auto-flow: row;
-
 }
 
 .github-media-grid-item {
-
 }
 
 .github-media-grid-container figcaption {
 	font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .github-text-container {
