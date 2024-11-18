@@ -236,6 +236,7 @@ a.button:hover{
     display: flex;
     align-items: center;
 	background-color: #FFF4BC;
+	margin-bottom: 3em;
 }
 
 .index-article img {
