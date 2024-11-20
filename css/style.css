@@ -175,19 +175,15 @@ td:empty {
 .rowcolor-fellesfag {
 	background-color: #FFF7D3;
 }
-
 .rowcolor-statiske-og-datadrevne-metoder {
 	background-color: #BCE3FD;
 }
-
 .rowcolor-matematikk-og-fysikk {
 	background-color: #ADE69D;
 }
-
 .rowcolor-vitenskapelige-beregninger{
 	background-color: #F4CBF4;
 }
-
 .table-text {
 height: 3px;
 }
@@ -196,7 +192,6 @@ height: 3px;
 	border-collapse: collapse;
 	margin-bottom: 20px;
 	text-align: center;
-	
 }
 .studieoversikt td {
 	font-size: 0.5em;
@@ -208,6 +203,7 @@ height: 3px;
     text-align: center;
     max-width: 500px;
 }
+
 /* <a> tag (hyperlink) that looks like button*/
 a.button {
     border: 0.1em solid #9a9a9a;
@@ -231,6 +227,7 @@ a.button:hover{
     padding-right: 0.6em;
     padding-top:0.2em;
 }
+
 /*_____________________Index article___________________________*/
 .index-article {
     display: flex;
@@ -238,22 +235,17 @@ a.button:hover{
 	background-color: #FFF4BC;
 	margin-bottom: 3em;
 }
-
 .index-article img {
     width: 40%; 
     height: auto; 
 }
-
 .index-article-paragraf{
     padding-left: 2em;
 	padding: 2em;
-
 }
-
 .index-article-paragraf a:hover{
 	text-decoration: underline black;
 }
-
 .teknologi-design-link{
 	text-decoration: underline black;
 }
@@ -276,27 +268,25 @@ h4{
 	align-self:center;
 }
 .nyhetsbrev-button{
-	
 	background-color: white;
 	font-family: "arial black";
 	font-size: 0.7em;
 	text-transform: uppercase;
 	padding: 1em 2em;
-  text-align:center;
-  text-decoration: none;
-  display: block;
-  margin-right: 10%;
- align-self: center;
- border-radius: 5%;
+	text-align:center;
+  	text-decoration: none;
+	display: block;
+  	margin-right: 10%;
+ 	align-self: center;
+ 	border-radius: 5%;
 }
-/*Footer___________________________________JULIE*/
+/*Footer___________________________________*/
 
 footer{
 	display: flex;
 	justify-content:space-around;
 	align-items: flex-start;
 	padding: 1.0em;
-
 }
 footer ul{
 list-style-type: none;
@@ -315,16 +305,9 @@ padding-left: 0;
 .footer-contact ul {
 	padding-left: 0;
 }
-
 .footer-item4-icon img{ /*SoMe icons*/
 	max-height: 1em;
 }
-
-/* .footer-item4_IMG{ 
-	height: 3.0rem;
-	width: auto	;
-	padding-bottom: 1.0em;
-} */
 
 /*MEDIA QUERIES*/
 @media (max-width:400px){
@@ -344,7 +327,6 @@ padding-left: 0;
 		display: block;
 		text-align: left;
 	}
-
 	.index-article img{
 		width: 100%;
 		margin-top: 0.3em;
@@ -367,11 +349,9 @@ padding-left: 0;
 		padding:1em 2em;
 		min-width: 100px;
 	}
-	
 }
 
 @media (max-width: 700px){
-
 	.main-section{
 		padding: 1rem 1rem;
 	}
@@ -409,7 +389,6 @@ padding-left: 0;
 		width: auto;
 		padding-top: 2em;
 		padding-bottom: 2em;
-
 	} 
 	/*Header*/
     .header-row {
@@ -429,7 +408,7 @@ padding-left: 0;
 }
 
 @media (max-width: 1000px) {
-	/*Header table s*/
+	/*Header tables*/
 	.header-table{
 		width: 90%;
 	}
@@ -480,29 +459,36 @@ padding-left: 0;
 	.activity-article-container p {
 		flex: 1 1 100%;
 	}
-	.nav-activity {
-		padding: 0.5rem 2rem;
+}
+@media (max-width: 500px) {
+	.activity-menu {
+		flex-direction: column;
+		text-align: center;
+	}
+	.activity-menu li {
+		padding: 0.4em;
 	}
 }
-
 .activity-page-body{
 	font-family: Helvetica,Arial, sans-serif;
 	margin: 0 auto;
-	padding: 0 20px;
+
 	background-color:#000000;
 	color:#fff;
 }
-.nav-activity{
+.activity-nav{
 	position: sticky;
 	top: 0;
 	padding: 1rem 4rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	background-color: #000000;
 	z-index: 1;
 }
-.nav-activity a{
+.activity-menu {
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+.activity-nav a{
 	text-decoration: none;
 	color:#ffffff;
 }
@@ -539,11 +525,11 @@ padding-left: 0;
 }
 .activity-article-container{
 	display: flex;
-	gap: 20px;
-	flex-wrap: wrap; /*makes sure it's responsive*/
+	gap: 3rem;
+	flex-wrap: wrap;
 	align-items: flex-start;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 2rem auto;
+	padding: 2rem 2rem;
 	max-width: 800px;
 	line-height: 1.6;
 }
