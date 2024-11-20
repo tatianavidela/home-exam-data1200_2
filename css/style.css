@@ -297,12 +297,13 @@ h4{
 .github-img img {
 	max-width: 100%;
 }
-/* Flex instruksjoner tatt fra:https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 */
+	/* Flex instruksjoner tatt fra:https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 */
 .gallery-row {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	width: 100%;
+	margin: 10px auto;
+	max-width: 1800px;
 }
 .gallery-column {
 		display: flex;
