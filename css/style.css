@@ -112,7 +112,7 @@ Example complete page 2: Hamburger menu)*/
 	padding:1rem 5rem;
 }
 .section-header, .accordion-content{
-	max-width: 800px;
+	max-width: 1000px;
 }
 .section-header {
 	display: flex;
@@ -280,6 +280,7 @@ h4{
  	align-self: center;
  	border-radius: 5%;
 }
+
 /*Footer___________________________________*/
 
 footer{
