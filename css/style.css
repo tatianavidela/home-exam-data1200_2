@@ -234,10 +234,11 @@ a.button:hover{
 /*_____________________Index article___________________________*/
 .index-article {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 	gap: 1em;
 	background-color: #FFF4BC;
 	margin-bottom: 3em;
+	max-width: 800px;
 }
 
 .index-article h3{
@@ -252,7 +253,7 @@ a.button:hover{
 .index-article-paragraf{
 	padding: 1em;
 	padding-top: 2em;
-
+	max-width: 295px;
 }
 
 .index-article-paragraf a:hover{
