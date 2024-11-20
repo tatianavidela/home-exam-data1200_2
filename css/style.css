@@ -160,22 +160,41 @@ details:not([open]) summary{
 
 /*_______________table*/
 
-.studieoversikt {
-	width: 100%;
+.studieoversikt-container {
+	display: flex;
 	border-radius: 25px;
 	border: 2px solid #9a9a9a;
 	padding: 20px;
-	height: 150px;
 }
 
-.studieoversikt th{
+.studieoversikt-header {
+	text-align: center;
+	background-color: #f2f2f2;
+	padding-top: 9px;
+	padding-bottom: 9px;
+
+}
+
+.semester1, .semester2 {
+	width: 100%;
+	height: 120px;
+	table-layout: fixed;
+}
+
+.semester1, .semester2, th{
 	font-size: 0.875rem;
 }
 
-.studieoversikt td, p {
+.semester1, .semester2, td, p {
 	font-size: 0.9em;
 	text-align: left;
 }
+
+.semester1, .semester2, td {
+	width: 50%;
+	vertical-align: top;
+}
+
 /*_______________table content*/
 
 .studieaar {
@@ -189,6 +208,7 @@ details:not([open]) summary{
 
 .course-name {
 	margin-bottom: 0px;
+	margin-top: 5px;
 }
 
 .course-code {
@@ -202,19 +222,19 @@ details:not([open]) summary{
 
 /*_______________table color codes*/
 .color-fellesfag {
-border-top: solid 3px #fff4bc;
+	border-top: 5px solid #fff4bc;
 }
 
 .color-statiske-og-datadrevne-metoder {
-	border-top: 7px solid #BCE3FD;
+	border-top: 5px solid #BCE3FD;
 }
 
 .color-matematikk-og-fysikk {
-	border-top: 7px solid #ADE69D;
+	border-top: 5px solid #ADE69D;
 }
 
 .color-vitenskapelige-beregninger{
-	border-top: 7px solid #F4CBF4;
+	border-top: 5px solid #F4CBF4;
 }
 
 
@@ -475,6 +495,22 @@ padding-left: 0;
 	}
 }
 
+@media (min-width: 601px) {
+	.studieoversikt-container {
+		flex-direction: row;
+	}
+}
+
+/* For screens smaller than 601px */
+@media (max-width: 600px) {
+	.studieoversikt-container {
+		flex-direction: column;
+	}
+	.semester1,
+	.semester2 {
+		width: 100%;
+	}
+}
 /*ACTIVITY PAGE*/
 @media (max-width: 768px) {
 	.activity-article-container p {
