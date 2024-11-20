@@ -160,41 +160,42 @@ details:not([open]) summary{
 
 /*_______________table*/
 
-.studieoversikt-color-index td,
-.studieoversikt th,
+.color-fellesfag {
+	height: 5px;
+	width: 100%;
+	background-color: yellow;
+}
+
+.studieoversikt table {
+	border-color: 5px solid #000000;
+}
+
+.studieoversikt th{
+	font-size: 0.875rem;
+}
 .studieoversikt td {
- 	border: 1px solid #cfcfcf;
-	
+	font-size: 0.9em;
 }
-.studieoversikt-color-index, .studieoversikt-color-index td, .studieoversikt th{
-	font-size: 0.8em;
+
+.bordercolor-fellesfag {
 }
-td:empty {
-	height: 1px;
+
+.bordercolor-statiske-og-datadrevne-metoder {
+	border-top: 7px solid #BCE3FD;
 }
-.rowcolor-fellesfag {
-	background-color: #FFF7D3;
+
+.bordercolor-matematikk-og-fysikk {
+	border-top: 7px solid #ADE69D;
 }
-.rowcolor-statiske-og-datadrevne-metoder {
-	background-color: #BCE3FD;
-}
-.rowcolor-matematikk-og-fysikk {
-	background-color: #ADE69D;
-}
-.rowcolor-vitenskapelige-beregninger{
-	background-color: #F4CBF4;
-}
-.table-text {
-height: 3px;
+
+.bordercolor-vitenskapelige-beregninger{
+	border-top: 7px solid #F4CBF4;
 }
 
 .studieoversikt {
 	border-collapse: collapse;
 	margin-bottom: 20px;
 	text-align: center;
-}
-.studieoversikt td {
-	font-size: 0.5em;
 }
 
 /*_______________buttons*/
