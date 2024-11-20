@@ -160,43 +160,63 @@ details:not([open]) summary{
 
 /*_______________table*/
 
-.color-fellesfag {
-	height: 5px;
+.studieoversikt {
 	width: 100%;
-	background-color: yellow;
-}
-
-.studieoversikt table {
-	border-color: 5px solid #000000;
+	border-radius: 25px;
+	border: 2px solid #9a9a9a;
+	padding: 20px;
+	height: 150px;
 }
 
 .studieoversikt th{
 	font-size: 0.875rem;
 }
-.studieoversikt td {
+
+.studieoversikt td, p {
 	font-size: 0.9em;
+	text-align: left;
+}
+/*_______________table content*/
+
+.studieaar {
+	border-radius: 20px;
+	background-color: #f0f0f0;}
+
+.course-container {
+	display: flex;
+	justify-content: space-between;
 }
 
-.bordercolor-fellesfag {
+.course-name {
+	margin-bottom: 0px;
 }
 
-.bordercolor-statiske-og-datadrevne-metoder {
+.course-code {
+	font-size: 10px;
+}
+
+.study-points{
+	font-size: 10px;
+	text-align: right;
+}
+
+/*_______________table color codes*/
+.color-fellesfag {
+border-top: solid 3px #fff4bc;
+}
+
+.color-statiske-og-datadrevne-metoder {
 	border-top: 7px solid #BCE3FD;
 }
 
-.bordercolor-matematikk-og-fysikk {
+.color-matematikk-og-fysikk {
 	border-top: 7px solid #ADE69D;
 }
 
-.bordercolor-vitenskapelige-beregninger{
+.color-vitenskapelige-beregninger{
 	border-top: 7px solid #F4CBF4;
 }
 
-.studieoversikt {
-	border-collapse: collapse;
-	margin-bottom: 20px;
-	text-align: center;
-}
 
 /*_______________buttons*/
 .button-section{
