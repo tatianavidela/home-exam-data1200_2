@@ -162,44 +162,55 @@ details:not([open]) summary{
 
 .studieoversikt-container {
 	display: flex;
-	border-radius: 25px;
-	border: 2px solid #9a9a9a;
-	padding: 20px;
+	letter-spacing: 0.1px;
 }
 
-.studieoversikt-header {
+
+.studieaar {
 	text-align: center;
-	background-color: #f2f2f2;
+	border-radius: 20px;
+	background-color: #f0f0f0;
 	padding-top: 9px;
 	padding-bottom: 9px;
-
 }
 
 .semester1, .semester2 {
 	width: 100%;
-	height: 120px;
+	height: 300px;
 	table-layout: fixed;
+	border-radius: 25px;
+	border: 2px solid #9a9a9a;
+	padding: 10px;
+	margin: 10px;
 }
 
-.semester1, .semester2, th{
+th.semester1, th.semester2 {
 	font-size: 0.875rem;
 }
 
-.semester1, .semester2, td, p {
+p.semester {
 	font-size: 0.9em;
 	text-align: left;
 }
 
-.semester1, .semester2, td {
+td.semester {
 	width: 50%;
 	vertical-align: top;
+	font-size: 0.9em;
+	text-align: left;
+	text-align: left;
+}
+
+td.course-cell {
+	width: 50%;
+	vertical-align: top;
+	font-size: 0.9em;
+	text-align: left;
+	text-align: left;
 }
 
 /*_______________table content*/
 
-.studieaar {
-	border-radius: 20px;
-	background-color: #f0f0f0;}
 
 .course-container {
 	display: flex;
@@ -508,7 +519,6 @@ padding-left: 0;
 	}
 	.semester1,
 	.semester2 {
-		width: 100%;
 	}
 }
 /*ACTIVITY PAGE*/
