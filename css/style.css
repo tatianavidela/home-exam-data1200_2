@@ -7,7 +7,7 @@ body {
 	grid-template-rows: auto 1fr auto;
 	position: relative;
 }
-h2, h3, a, p, li, table{
+h2, h3, a, p, li, table,figcaption{
     font-family: Arial, Helvetica, sans-serif;
 }
 a {
@@ -281,6 +281,32 @@ h4{
  	border-radius: 5%;
 }
 
+/*GITHUB PAGE*/
+.github-gallery-header{
+	text-align: center;
+}
+.github-img img {
+	max-width: 100%;
+}
+	/* Flex instruksjoner tatt fra:https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 */
+.gallery-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px auto;
+	max-width: 1800px;
+}
+.gallery-column {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+	  
+}
+@media screen and (min-width: 800px) {
+	.gallery-column {
+		flex: 1
+	  }
+}
 /*Footer___________________________________*/
 
 footer{
