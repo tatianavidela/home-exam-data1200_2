@@ -138,13 +138,11 @@ summary{
 	font-weight: bold;
 	font-size: 1.2em;
 }
-details > summary {
-	list-style-image: url(../media/minus.svg);
-}
+
 details:not([open]) summary{
 	font-size: 1.2em;
 	font-weight: normal;
-	list-style-image: url(../media/plus.svg);
+
 }
 .accordion-link{
 	color: black;
@@ -552,9 +550,6 @@ padding-left: 0;
 	.studieoversikt-container {
 		flex-direction: column;
 	}
-	.semester1,
-	.semester2 {
-	}
 }
 /*ACTIVITY PAGE*/
 @media (max-width: 768px) {
@@ -574,7 +569,6 @@ padding-left: 0;
 .activity-page-body{
 	font-family: Helvetica,Arial, sans-serif;
 	margin: 0 auto;
-
 	background-color:#000000;
 	color:#fff;
 }
