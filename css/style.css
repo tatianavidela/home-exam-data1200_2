@@ -158,9 +158,30 @@ details:not([open]) summary{
 
 /*_______________table*/
 
+.color-index {
+	display: table;
+	width: 50%;
+	vertical-align: top;
+	margin-top: 20px;
+}
+
+.color-index-row {
+	height: 30px !important;
+}
+
+td.coursename-color-index {
+	width: 100%;
+}
+
+.coursename-color-index p {
+	text-align: left;
+	margin: 0;
+}
+
 .studieoversikt-container {
 	display: flex;
 	letter-spacing: 0.1px;
+	vertical-align: bottom;
 }
 
 .studieaar {
@@ -190,14 +211,7 @@ p.semester {
 	text-align: left;
 }
 
-td.semester {
-	width: 50%;
-	vertical-align: top;
-	font-size: 0.9em;
-	text-align: left;
-}
-
-td.course-cell {
+td.semester, td.course-cell {
 	width: 50%;
 	vertical-align: top;
 	font-size: 0.9em;
@@ -205,8 +219,6 @@ td.course-cell {
 }
 
 /*_______________table content*/
-
-
 .course-container {
 	display: flex;
 	justify-content: space-between;
@@ -227,6 +239,30 @@ td.course-cell {
 }
 
 /*_______________table color codes*/
+#circle-fellesfag {
+	display: inline-block;
+	border-radius: 50px;
+	border: 15px solid 	#FFF4BCFF;
+}
+
+#circle-statiske-og-datadrevne-metoder {
+	display: inline-block;
+	border-radius: 50px;
+	border: 15px solid #bce3fd;
+}
+
+#circle-matematikk-og-fysikk {
+	display: inline-block;
+	border-radius: 50px;
+	border: 15px solid #ade69d;
+}
+
+#circle-vitenskapelige-beregninger {
+	display: inline-block;
+	border-radius: 50px;
+	border: 15px solid #f4cbf4;
+}
+
 .color-fellesfag {
 	border-top: 5px solid #fff4bc;
 }
@@ -242,7 +278,6 @@ td.course-cell {
 .color-vitenskapelige-beregninger{
 	border-top: 5px solid #F4CBF4;
 }
-
 
 /*_______________buttons*/
 .button-section{
