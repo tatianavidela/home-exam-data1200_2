@@ -19,14 +19,14 @@ nav a:hover, footer a:hover {
   }
 h1 {
 	margin: 0;
-    font-family: owners-wide,Arial, Helvetica, sans-serif;
+    font-family: owners-wide, Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 3em;
 	text-transform: uppercase;
 }
 h2{
-	font-family: "arial black";
+	font-family: "arial black", Arial, Helvetica, sans-serif;
     font-size: 1.5em;
     text-transform: uppercase;
 }
@@ -552,9 +552,6 @@ padding-left: 0;
 	.studieoversikt-container {
 		flex-direction: column;
 	}
-	.semester1,
-	.semester2 {
-	}
 }
 /*ACTIVITY PAGE*/
 @media (max-width: 768px) {
@@ -586,6 +583,7 @@ padding-left: 0;
 	z-index: 1;
 }
 .activity-menu {
+	padding-left: 0px;
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
