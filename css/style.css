@@ -230,22 +230,33 @@ a.button:hover{
 
 /*_____________________Index article___________________________*/
 .index-article {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	gap: 1em;
 	background-color: #FFF4BC;
 	margin-bottom: 3em;
+	max-width: 800px;
 }
+
+.index-article h3{
+	padding-top: 2.2em;
+}
+
 .index-article img {
-    width: 40%; 
-    height: auto; 
+    width: 100%; 
+    height: 100%;
 }
+
 .index-article-paragraf{
-    padding-left: 2em;
-	padding: 2em;
+	padding: 1em;
+	padding-top: 2em;
+	max-width: 295px;
 }
+
 .index-article-paragraf a:hover{
 	text-decoration: underline black;
 }
+
 .teknologi-design-link{
 	text-decoration: underline black;
 }
