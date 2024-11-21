@@ -37,7 +37,7 @@
             <div class="section-header">
                 <h2>Universal utforming av nettsiden vår</h2>
                 <p class="accessibility-top">
-                    Universell utforming er et krav som er viktig å vurdere når man skal utvikle en nettside. Ikke bare hjelper det mennesker med forskjellige funkjsjonsnedsettinger, men bidrar også til å utvikle et intuitivt og logisk design.</p>
+                    Universell utforming er et krav som er viktig å vurdere når man skal utvikle en nettside. Ikke bare hjelper det mennesker med forskjellige funkjsjonsnedsettinger, men bidrar også til å skape et intuitivt og logisk design.</p>
             </div>
 
             <hr>
@@ -47,60 +47,65 @@
                     Accessibility i HTML
                 </h3>
                 <p class="accessibility">
-                    Da vi lagde nettsiden forsøkte vi både å gjøre den intuitiv å navigere, 
-                    og å følge reglene for universell utforming. 
-                    Dette gjorde vi ved å implementere semantiske elementer når enn det var mulig,
-                    noe som er viktig når det kommer til bruk av tilgjengelighetsverktøy 
-                     som skjermlesere og å navigere med keyboard, 
-                     i tillegg til at det gjør det enklere for fremtidige utviklere 
-                     å navigere koden i seg selv. Vi la også inn alt-tekst på alle bilder, 
-                     som er enda en måte å gjøre det tilgjengelig for de som bruker 
-                     skjermlesere. 
+                    Da vi lagde nettsiden forsøkte vi både å gjøre den intuitiv å navigere, og å følge reglene for universell utforming. Dette gjorde vi ved å implementere semantiske elementer når enn det var mulig, noe som er viktig når det kommer til bruk av tilgjengelighetsverktøy som skjermlesere og å navigere med keyboard, i tillegg til at det gjør det enklere for fremtidige utviklere å navigere koden i seg selv. Vi la også inn alt-tekst på alle bilder, som er enda en måte å gjøre det tilgjengelig for de som bruker skjermlesere. 
                 </p>
                 <hr>
                 <h3>
                     Accessibility i CSS og design
                 </h3>
                 <p class="accessibility">
-                    Vi ønsket også å bruke en logisk utformet designstruktur, 
-                    slik at det er lettere å manøvrere nettsiden gjennom visuelle indikatorer. 
-                    For eksempel brukte vi intuitive tekststørrelser for overskrift og paragrafer, og 
-                    fulgte visuelle standarder for bl.a. linker og menyer 
-                    (å holde musepeker over linker, burger meny osv).  
-                    Ved bruk av CSS passet vi også på at siden også er responsiv, 
-                    slik at den holder et godt strukturert layout på forskjellige skjermstørrelser.
+                    Vi ønsket også å bruke en logisk utformet designstruktur, slik at det er lettere å manøvrere nettsiden gjennom visuelle indikatorer. For eksempel brukte vi intuitive tekststørrelser for overskrift og paragrafer, og fulgte visuelle standarder for bl.a. linker og menyer (å holde musepeker over linker, burger meny osv).  Ved bruk av CSS passet vi også på at siden er responsiv, slik at den holder et godt strukturert layout på forskjellige skjermstørrelser.
                 </p>
                 <hr>
                 <h3>
                     Accessibility via fargebruk
                 </h3>
                 <p class="accessibility">
-                    Da vi valgte fargene til nettsiden hadde vi også accessibility i bakhodet, 
-                    i tillegg til det estetiske. Noen mennesker kan oppleve visuell tretthet 
-                    når man ser på mer mettede farger over lenger tid. Dette var en av grunnene til at vi valgte 
-                    en litt dusere gulfarge enn OsloMet sin originale nettside. 
-                    Vi har også fargekodet tabellen med studiets oppbygging, 
-                    som gjør den mer oversiktlig og lettere å forstå.
+                    Da vi valgte fargene til nettsiden hadde vi også accessibility i bakhodet, i tillegg til det estetiske. Noen mennesker kan oppleve visuell tretthet når man ser på mer mettede farger over lenger tid. Dette var en av grunnene til at vi valgte en litt dusere gulfarge enn OsloMet sin originale nettside. Samtidig har vi passet på at det er høy nok kontrast mellom teksten og bakgrunnen, som bidrar til at svaksynte og mennesker som er fargeblinde fortsatt kan lese innholdet. Vi har også fargekodet tabellen med studiets oppbygging, som gjør den mer oversiktlig og lettere å forstå. 
                 </p>
                 <hr>
                 <h3>
                     Testing av nettsiden
                 </h3>
                 <p class="accessibility">
-                    Ved bruk av automatiserte tester, sjekket vi om nettsiden 
-                    fulgte internasjonale standarder for universell utforming. 
-                    For å være på den sikre siden brukte vi et par forskjellige 
-                    sider for å teste dette. (legge inn bilde?)
-                    I tillegg til automatiske tester, bruker vi 3 forskjellige 
-                    nettlesere innad i gruppa, som gjør at vi kan se hvordan siden 
-                    ser annerledes ut på de ulike browserne. Vi har også jevnlig brukt 
-                    «inspect» funksjonen i nettleserne, der man kan både inspisere 
-                    koden og observere hvordan nettsiden ser ut i forskjellige størrelser. 
-                    For å teste nettsiden manuelt har vi brukt tastaturet for å navigere, og prøvd en skjermleser.
-                    (evt så skriver jeg litt mer om ting vi får feil på når vi skal teste)
+                    Ved bruk av automatiserte tester, sjekket vi om nettsiden fulgte internasjonale standarder for universell utforming. For å være på den sikre siden brukte vi et par forskjellige varianter av automatiserte tester, en hvor vi la inn html-koden i en validator (W3C html validator) og en extension til Google Chrome hvor man kan se feilene direkte i nettleseren (WAVE).
+                </p>
+                <p class="accessibility">
+                    I tillegg til automatiske tester, bruker vi 3 forskjellige nettlesere innad i gruppa, som gjør at vi kan se hvordan siden ser annerledes ut på de ulike browserne. Vi har også jevnlig brukt «inspect» funksjonen i nettleserne, der man kan både inspisere koden og observere hvordan nettsiden ser ut i forskjellige størrelser. For å teste nettsiden manuelt har vi brukt tastaturet for å navigere, og prøvd en skjermleser.
+                </p>
+                <p class="accessibility">
+                    Etter hvert som vi testet koden og CSSen og fikk opp diverse feil, tok vi tiltak for å endre koden i henhold til tilbakemeldingene vi fikk fra de ulike testene.  I bildene vist under kan du se noen feil vi fikk, og hvordan koden så ut etter vi hadde fikset dem.
                 </p>
             </div>
            
+        </section>
+        <section class="main-section">
+            <h3 class="github-gallery-header">Feil fra testene og endringer vi gjorde i koden</h3>
+            <div class="github-gallery-container">
+                <div class="gallery-row">
+                    <div class="gallery-column">
+                        <div class="github-img">
+                            <figure><img src="media/commit-history_1.jpeg" alt="Commit History"><figcaption>Commit History</figcaption></figure>
+                        </div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="github-img">
+                            <figure><img src="media/commit-history_2.jpeg" alt="Commit History"><figcaption>Commit History</figcaption></figure>
+                        </div>
+                    </div>
+                </div><div class="gallery-row">
+                    <div class="gallery-column">
+                        <div class="github-img">
+                            <figure><img src="media/specific-changes_1.jpeg" alt="Forandinger på github"><figcaption>Endringer gjort på GitHub-siden</figcaption></figure>
+                        </div>
+                    </div>
+                    <div class="gallery-column">
+                        <div class="github-img">
+                            <figure><img src="media/specific-changes_2.jpeg" alt="Forandringer på Activity Page"><figcaption>Media queries gjort for activity siden</figcaption></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
