@@ -575,18 +575,19 @@ padding-left: 0;
 	}
 }
 
-@media (min-width: 601px) {
+@media (min-width: 800px) {
 	.studieoversikt-container {
 		flex-direction: row;
 	}
 }
 
-/* For screens smaller than 601px */
-@media (max-width: 600px) {
+/*Studieoversikt table Mediaqueary*/
+@media (max-width: 801px) {
 	.studieoversikt-container {
 		flex-direction: column;
 	}
 }
+
 /*ACTIVITY PAGE*/
 @media (max-width: 768px) {
 	.activity-article-container p {
