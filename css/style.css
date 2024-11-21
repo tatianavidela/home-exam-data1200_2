@@ -455,7 +455,7 @@ padding-left: 0;
 	footer{
 		flex-direction: column;
 	}
-} 
+}
 
 @media (min-width:701px){
 	/*hamburger menu*/
@@ -510,7 +510,7 @@ padding-left: 0;
 		width: auto;
 		padding-top: 2em;
 		padding-bottom: 2em;
-	} 
+	}
 	/*Header*/
     .header-row {
 		flex-direction: column;
@@ -520,9 +520,9 @@ padding-left: 0;
 		  flex: 1;
 		  width: 100%;
 		}
-		.title-img img{
-		  max-height: 320px;
-	  }
+	.title-img img {
+		max-height: 320px;
+	}
 	  .button-section {
 		max-width: 80%;
 	}
@@ -542,11 +542,11 @@ padding-left: 0;
 		display: block;
 	}
 	.header-table thead {
-		display: none; 
+		display: none;
 	}
 	.header-table tr {
 		display: grid;
-		grid-template-columns: 1fr 1fr; 
+		grid-template-columns: 1fr 1fr;
 		gap: 10px;
 		margin-bottom: 15px;
 		padding: 10px;
@@ -566,7 +566,7 @@ padding-left: 0;
 		margin-bottom: 5px;
 	}
 }
-@media (min-width: 700px) and (max-width: 1300px){
+@media (min-width: 701px) and (max-width: 1300px){
 	h1{
 		font-size: 1.8em;
 	}
