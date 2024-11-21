@@ -160,42 +160,91 @@ details:not([open]) summary{
 
 /*_______________table*/
 
-.studieoversikt-color-index td,
-.studieoversikt th,
-.studieoversikt td {
- 	border: 1px solid #cfcfcf;
-	
-}
-.studieoversikt-color-index, .studieoversikt-color-index td, .studieoversikt th{
-	font-size: 0.8em;
-}
-td:empty {
-	height: 1px;
-}
-.rowcolor-fellesfag {
-	background-color: #FFF7D3;
-}
-.rowcolor-statiske-og-datadrevne-metoder {
-	background-color: #BCE3FD;
-}
-.rowcolor-matematikk-og-fysikk {
-	background-color: #ADE69D;
-}
-.rowcolor-vitenskapelige-beregninger{
-	background-color: #F4CBF4;
-}
-.table-text {
-height: 3px;
+.studieoversikt-container {
+	display: flex;
+	letter-spacing: 0.1px;
 }
 
-.studieoversikt {
-	border-collapse: collapse;
-	margin-bottom: 20px;
+.studieaar {
 	text-align: center;
+	border-radius: 20px;
+	background-color: #f0f0f0;
+	padding-top: 9px;
+	padding-bottom: 9px;
 }
-.studieoversikt td {
-	font-size: 0.5em;
+
+.semester1, .semester2 {
+	width: 100%;
+	height: 300px;
+	table-layout: fixed;
+	border-radius: 25px;
+	border: 2px solid #9a9a9a;
+	padding: 10px;
+	margin: 10px;
 }
+
+th.semester1, th.semester2 {
+	font-size: 0.875rem;
+}
+
+p.semester {
+	font-size: 0.9em;
+	text-align: left;
+}
+
+td.semester {
+	width: 50%;
+	vertical-align: top;
+	font-size: 0.9em;
+	text-align: left;
+}
+
+td.course-cell {
+	width: 50%;
+	vertical-align: top;
+	font-size: 0.9em;
+	text-align: left;
+}
+
+/*_______________table content*/
+
+
+.course-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.course-name {
+	margin-bottom: 0px;
+	margin-top: 5px;
+}
+
+.course-code {
+	font-size: 10px;
+}
+
+.study-points{
+	font-size: 10px;
+	text-align: right;
+}
+
+/*_______________table color codes*/
+.color-fellesfag {
+	border-top: 5px solid #fff4bc;
+}
+
+.color-statiske-og-datadrevne-metoder {
+	border-top: 5px solid #BCE3FD;
+}
+
+.color-matematikk-og-fysikk {
+	border-top: 5px solid #ADE69D;
+}
+
+.color-vitenskapelige-beregninger{
+	border-top: 5px solid #F4CBF4;
+}
+
 
 /*_______________buttons*/
 .button-section{
@@ -492,6 +541,21 @@ padding-left: 0;
 	}
 }
 
+@media (min-width: 601px) {
+	.studieoversikt-container {
+		flex-direction: row;
+	}
+}
+
+/* For screens smaller than 601px */
+@media (max-width: 600px) {
+	.studieoversikt-container {
+		flex-direction: column;
+	}
+	.semester1,
+	.semester2 {
+	}
+}
 /*ACTIVITY PAGE*/
 @media (max-width: 768px) {
 	.activity-article-container p {
