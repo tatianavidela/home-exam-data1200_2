@@ -80,6 +80,7 @@ Example complete page 2: Hamburger menu)*/
 .title-box, .title-img {
 	flex: 1;
 	max-height: 22rem;
+	padding-right: 20px;
 } 
 .title-img img{
     object-fit: cover;
