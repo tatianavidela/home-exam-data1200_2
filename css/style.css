@@ -627,7 +627,8 @@ padding-left: 0;
 	color:#ffffff;
 }
 .activity-header {
-	background-image: url(/media/APHeaderbildeSD.jpg); /* https://www.pexels.com/nb-no/bilde/dagslys-idrett-mennesker-park-2894/*/
+	background-image: url(/media/APHeaderbildeSD.jpg);/*fotograf - Jaymantri, https://www.pexels.com/nb-no/bilde/dagslys-idrett-mennesker-park-2894/*/
+	
 	position: relative;
 	height: 800px;
 	background-attachment: fixed;
