@@ -80,6 +80,7 @@ Example complete page 2: Hamburger menu)*/
 .title-box, .title-img {
 	flex: 1;
 	max-height: 22rem;
+	padding-right: 20px;
 } 
 .title-img img{
     object-fit: cover;
@@ -431,7 +432,7 @@ padding-left: 0;
 }
 
 /*MEDIA QUERIES*/
-@media (max-width:400px){
+@media (max-width:779px){
 	h1{
 		font-size: 2em;
 	}
@@ -455,9 +456,9 @@ padding-left: 0;
 	footer{
 		flex-direction: column;
 	}
-} 
+}
 
-@media (min-width:701px){
+@media (min-width:781px){
 	/*hamburger menu*/
 	.menu{
 		display: flex;
@@ -472,7 +473,7 @@ padding-left: 0;
 	}
 }
 
-@media (max-width: 700px){
+@media (max-width: 780px){
 	.main-section{
 		padding: 1rem 1rem;
 	}
@@ -510,7 +511,8 @@ padding-left: 0;
 		width: auto;
 		padding-top: 2em;
 		padding-bottom: 2em;
-	} 
+	}
+
 	/*Header*/
     .header-row {
 		flex-direction: column;
@@ -520,9 +522,9 @@ padding-left: 0;
 		  flex: 1;
 		  width: 100%;
 		}
-		.title-img img{
-		  max-height: 320px;
-	  }
+	.title-img img {
+		max-height: 320px;
+	}
 	  .button-section {
 		max-width: 80%;
 	}
@@ -542,11 +544,11 @@ padding-left: 0;
 		display: block;
 	}
 	.header-table thead {
-		display: none; 
+		display: none;
 	}
 	.header-table tr {
 		display: grid;
-		grid-template-columns: 1fr 1fr; 
+		grid-template-columns: 1fr 1fr;
 		gap: 10px;
 		margin-bottom: 15px;
 		padding: 10px;
@@ -566,7 +568,7 @@ padding-left: 0;
 		margin-bottom: 5px;
 	}
 }
-@media (min-width: 700px) and (max-width: 1300px){
+@media (min-width: 781px) and (max-width: 1300px){
 	h1{
 		font-size: 1.8em;
 	}
@@ -627,7 +629,8 @@ padding-left: 0;
 	color:#ffffff;
 }
 .activity-header {
-	background-image: url(/media/APHeaderbildeSD.jpg); /* https://www.pexels.com/nb-no/bilde/dagslys-idrett-mennesker-park-2894/*/
+	background-image: url(/media/APHeaderbildeSD.jpg);/*fotograf - Jaymantri, https://www.pexels.com/nb-no/bilde/dagslys-idrett-mennesker-park-2894/*/
+	
 	position: relative;
 	height: 800px;
 	background-attachment: fixed;
@@ -668,7 +671,7 @@ padding-left: 0;
 	line-height: 1.6;
 }
 .activity-article-container a{
-	color: crimson;
+	color: rgb(219, 212, 2);
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 800px;
