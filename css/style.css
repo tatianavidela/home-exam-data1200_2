@@ -40,6 +40,9 @@ h1 +p, h2 + p {
 nav, header,footer {
 	background-color: #FFF4BC;
 }
+label{
+	font-family: Arial, Helvetica, sans-serif;
+}
 
 /*_Main nav*/
 .main-nav{
