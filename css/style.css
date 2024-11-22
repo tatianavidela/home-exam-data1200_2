@@ -183,6 +183,12 @@ details:not([open]) summary{
 .accordion-list li {
 	padding: 0.4em;
 }
+.under-accordion{
+	font-size: 1em;
+}
+details:not([open]) .under-accordion{
+	font-size: 1em;
+}
 
 /*_______________table*/
 
