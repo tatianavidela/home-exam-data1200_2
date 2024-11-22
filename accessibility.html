@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/vqz0yvu.css">
+    <script src="https://kit.fontawesome.com/c8ad54db39.js" crossorigin="anonymous"></script> <!-- Footer icons by Fontawesome -->
     <link rel="stylesheet" href="css/style.css">
     <title>Accessibility</title>
 </head>
 <body>
     <nav class="main-nav">
-        <div class="nav-left">
-            <a href="index.html"><img class="logo" src="media/Logo_of_Oslo_Metropolitan_University1.png" alt="Oslo met logo"></a>
-        </div>
-        <div class="nav-right">
-            <input id="hamburger-toggle" type="checkbox">
-            <label class="hamburger-toggle-container" for="hamburger-toggle">
-            <div class="menu-icon"></div>
-            </label>
-            <ul class="menu">
-                <li><a href="github.html">Github</a></li>
-                <li><a href="accessibility.html">Accessibility</a></li>
-                <li><a href="activity.html">Activity</a></li>
-            </ul>
-        </div>
+        <a href="index.html"><img class="logo" src="media/Logo_of_Oslo_Metropolitan_University1.png" alt="Oslo met logo"></a>
+        <input id="hamburger-toggle" type="checkbox">
+        <label class="hamburger-toggle-container" for="hamburger-toggle">
+        <div class="menu-icon"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="github.html">Github</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+            <li><a href="activity.html">Activity</a></li>
+        </ul>
     </nav>
-    <header class="header-wrapper">
-        <div class="header-row">
-            <div class="title-box">
+    <header class="main-header">
+        <section class="header-intro">
+            <div class="intro-text">
                 <h1>Accessibility</h1>
-                <p>Accessibility for our site</p>
+                <p>Accessibility på vår side</p>
             </div>
-        </div>
+        </section>
     </header>
     <main>
         <section class="main-section">
@@ -39,15 +36,12 @@
                 <p class="accessibility-top">
                     Universell utforming er et krav som er viktig å vurdere når man skal utvikle en nettside. Ikke bare hjelper det mennesker med forskjellige funkjsjonsnedsettinger, men bidrar også til å skape et intuitivt og logisk design.</p>
             </div>
-
             <hr>
-
             <div class="accordion-content">
                 <h3>
                     Accessibility i HTML
                 </h3>
-                <p class="accessibility">
-                    Da vi lagde nettsiden forsøkte vi både å gjøre den intuitiv å navigere, og å følge reglene for universell utforming. Dette gjorde vi ved å implementere semantiske elementer når enn det var mulig, noe som er viktig når det kommer til bruk av tilgjengelighetsverktøy som skjermlesere og å navigere med keyboard, i tillegg til at det gjør det enklere for fremtidige utviklere å navigere koden i seg selv. Vi la også inn alt-tekst på alle bilder, som er enda en måte å gjøre det tilgjengelig for de som bruker skjermlesere. 
+                <p class="accessibility">Da vi lagde nettsiden forsøkte vi både å gjøre den intuitiv å navigere, og å følge reglene for universell utforming. Dette gjorde vi ved å implementere semantiske elementer når enn det var mulig, noe som er viktig når det kommer til bruk av tilgjengelighetsverktøy som skjermlesere og å navigere med keyboard, i tillegg til at det gjør det enklere for fremtidige utviklere å navigere koden i seg selv. Vi la også inn alt-tekst på alle bilder, som er enda en måte å gjøre det tilgjengelig for de som bruker skjermlesere. 
                 </p>
                 <hr>
                 <h3>
@@ -109,10 +103,25 @@
         </section>
     </main>
     <footer>
-        <div class="footer-column"> 
-            <div class="footer-contact">
-                <img src=media/Logomedsignatur_OsloMet-01.png alt="OsloMet sin tekst logo ">
-                <ul><!--OsloMet Logo-->
+        <div class="footer-column">
+            <div class="footer-row">
+                <ul class="footer-links">
+                    <li><a href="https://www.oslomet.no/alumni">Alumni</a></li>
+                    <li><a href="https://www.oslomet.no/om/ledige-stillinger"> Ledige Stillinger</a> </li> 
+                    <li> <a href="https://www.oslomet.no/om/pressekontakt"> Pressekontakt</a> </li>
+                    <li> <a href="https://www.oslomet.no/om/tilgjengelegheitserklering"> Tilgjengelighetserklæring </a> </li>
+                    <li> <a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar"> Personvernserklæring og informasjonskapsler </a></li>
+                </ul>
+                <ul class="footer-links">
+                    <li><a href="https://www.oslomet.no/en">English</a> </li> 
+                    <li><a href="https://www.oslomet.no/om/ansatteoversikt">Ansattoversikt</a></li>
+                    <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangement oversikt</a></li>
+                    <li> <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a></li>
+                    <li> <a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
+                </ul>
+                <ul>
+                    <!-- Logo from: https://oslomet.fotoware.cloud/fotoweb/archives/5005-OsloMet-logo/-->
+                    <img src=media/Logomedsignatur_OsloMet-01.png alt="OsloMet sin tekst logo ">
                     <li> Postboks 4, St. Olavs plass</li>
                     <li> 0130 Oslo </li>
                     <li> Tlf.: 67 23 50 00</li>
@@ -120,36 +129,14 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-column footer-links">
-            <ul>
-                <li><a href="https://www.oslomet.no/en">English</a> </li> <!-- RAD 2-->
-                <li><a href="https://www.oslomet.no/om/ansatteoversikt">Ansattoversikt</a></li>
-                <li><a href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangement oversikt</a></li>
-                <li> <a href="https://www.oslomet.no/om/for-ansatte">For ansatte</a></li>
-                <li> <a href="https://www.oslomet.no/om/for-studenter">For studenter</a></li>
-
+        <div class="footer-column">
+            <ul class="footer-links">
+                <li><a href="https://www.instagram.com/oslomet/?hl=nb"><i class="fa-brands fa-instagram"></i>Instagram</a></li><!-- icons from fontawesome.com -->
+                <li><a href="https://www.facebook.com/oslomet/"><i class="fa-brands fa-facebook"></i>Facebook</a></li><!-- icons from fontawesome.com -->
+                <li><a href="https://x.com/oslomet"><i class="fa-brands fa-x-twitter"></i>X(Twitter)</a></li><!-- icons from fontawesome.com -->
+                <li><a href="https://no.linkedin.com/school/oslomet/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li><!-- icons from fontawesome.com -->
             </ul>
         </div>
-        <div class="footer-column footer-links">
-            <ul>
-                <li><a href="https://www.oslomet.no/alumni">Alumni</a></li>
-                <li><a href="https://www.oslomet.no/om/ledige-stillinger"> Ledige Stillinger</a> </li> <!-- RAD 3-->
-                <li> <a href="https://www.oslomet.no/om/pressekontakt"> Pressekontakt</a> </li>
-                <li> <a href="https://www.oslomet.no/om/tilgjengelegheitserklering"> Tilgjengelighetserklæring </a> </li>
-                <li> <a href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar"> Personvernserklæring og
-                    informasjonskapsler </a></li>
-            </ul>
-        </div>
-        <div class="footer-column footer-links">
-            <ul> <!-- RAD 4-->
-                <!-- <li class="footer-item4_IMG"> <img src=media/Abboner_vårt_nyhetsbrev_OsloMet.png alt="Abboner på OsloMet sitt nyhetsbrev"> <a href="https://www.oslomet.no/nyhetsbrev"> </a> </li> -->
-                <li class="footer-item4-icon"> <img src="media/Instagram_Glyph_Black%20copy.png" alt="Instagram Icon"> <a href="https://www.instagram.com/"> Instagram </a> </li>
-                <li class="footer-item4-icon "> <img src="media/linkedin-svgrepo-com%20copy.png " alt="LinkedIn Icon"> <a href="https://www.linkedin.com/"> LinkedIn </a> </li>
-                <li class="footer-item4-icon"> <img src="media/logo-black%20copy.png " alt="X Icon"> <a href="https://x.com/?lang=nb"> X (Twitter) </a> </li>
-                <li class="footer-item4-icon"> <img src="media/facebook-logo-svgrepo-com%20copy.png " alt="FaceBook Icon"> <a href="https://www.facebook.com/"> Facebook </a> </li>
-
-            </ul>
-        </div>
-        </footer>
+    </footer>
 </body>
 </html>

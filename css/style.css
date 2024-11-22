@@ -17,13 +17,13 @@ a {
 nav a:hover, footer a:hover {
 	font-weight: bolder;
   }
-h1 {
-	margin: 0;
+  h1{
     font-family: owners-wide, Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 3em;
+    font-size: 2.2rem;
 	text-transform: uppercase;
+    margin-top: 0;
 }
 h2{
 	font-family: Arial, Helvetica, sans-serif;
@@ -41,66 +41,93 @@ nav, header,footer {
 	background-color: #FFF4BC;
 }
 
-/*NAV*/
-.main-nav {
-	position: sticky;
-	top: 0;
-	padding: 1rem 4rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
+/*_Main nav*/
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 4rem;
+    position: sticky;
+    top: 0;
 }
 .logo {
-	width: 4em;
+	height: 50px;
+	padding: 5px;
 }
 /*Hamburger toggle (code from canvas module: grid layout and complete page, 
 Example complete page 2: Hamburger menu)*/
 #hamburger-toggle{
 	display: none;
 }
+.menu {
+	list-style-type: none;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	padding-right: 4em;
+	background-color: #FFF4BC;
+	min-width: 100px;
+}
+.menu-icon {
+	display: block;
+	background-image:url(../media/hamburger-menu.svg);
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+.menu li {
+	height: 0px;
+	overflow: hidden;
+}
+#hamburger-toggle:checked ~ .menu li {
+	height: 1rem;
+	width: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
 
-/*HEADER*/
-.header-wrapper{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
-	height: fit-content;
-	padding-bottom: 2rem;
+/*_Header*/
+.main-header {
+    background-color: #FFF4BC;
+    height: fit-content;
 }
-.header-row{
-	display: flex;
-	width: 80%;
-	justify-content: center;
-	padding: 2vw;
-	margin-bottom: 20px;
-	border-bottom: 1px solid rgb(81, 81, 81);
+/*__Header intro*/
+.header-intro, .header-table{
+    max-width: 1500px;
+    margin: 1rem auto;
 }
-.title-box, .title-img {
-	flex: 1;
-	max-height: 22rem;
-	padding-right: 20px;
-} 
-.title-img img{
+.header-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 2rem;
+}
+.intro-text, .intro-img{
+    max-height:300px ;
+    max-width: 400px;
+}
+.intro-img img {
     object-fit: cover;
+    height: 100%;
     width: 100%;
-    max-height: 100%;
 }
 
-  /* Header table styling */
-.header-table {
-	width: 80%;
-	padding: 1em;
-}
+/*___Header table section*/
 .header-table table {
-	width: 100%;
-	border-collapse: collapse;
-	table-layout: fixed;
+    margin: 1rem auto; 
+	padding-top: 1rem;   
+	border-top: 0.5px solid rgb(143, 143, 143);
 }
-.header-table table, td, th {
-	padding: 8px;
-	text-align: center;
+.header-table th,
+.header-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.header-table td {
+    padding-bottom: 3rem;
 }
 
 /* MAIN SECTION*/
@@ -392,219 +419,36 @@ h4{
 	max-width: 1800px;
 }
 .gallery-column {
-		display: flex;
-		flex-direction: column;
-		flex-basis: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
 	  
 }
-@media screen and (min-width: 800px) {
-	.gallery-column {
-		flex: 1
-	  }
-}
-/*Footer___________________________________*/
 
-footer{
+/*Footer___________________________________*/
+footer {
 	display: flex;
-	justify-content:space-around;
-	align-items: flex-start;
-	padding: 1.0em;
+	flex-direction: row;
+	justify-content: space-evenly;
 }
-footer ul{
-list-style-type: none;
-padding-left: 0;
+footer ul {
+	list-style-type: none;
+	padding-left: 0;
+	width: 240px;
+}
+.footer-row {
+	display: flex;
+	flex-direction: row;
+}
+.footer-row img {
+	max-width: 180px;
+	padding-bottom: 1rem;
 }
 .footer-links li{
-	padding: 1rem;
-}
-.footer-contact{
-	padding:2rem;
-}
-.footer-contact img{ /* OsloMet Logo*/
-	max-height: 2em;
-	margin-bottom: 2rem;
-}
-.footer-contact ul {
-	padding-left: 0;
-}
-.footer-item4-icon img{ /*SoMe icons*/
-	max-height: 1em;
-}
-
-/*MEDIA QUERIES*/
-@media (max-width:779px){
-	h1{
-		font-size: 2em;
-	}
-	h2{
-		font-size: 1.2em;
-	}
-	h1 +p, h2 + p {
-		font-size: 1em;
-	}
-	details:not([open]) summary, summary, details {
-		font-size: 1em;
-	}
-	.index-article {
-		display: block;
-		text-align: left;
-	}
-	.index-article img{
-		width: 100%;
-		margin-top: 0.3em;
-	}	
-	footer{
-		flex-direction: column;
-	}
-}
-
-@media (min-width:781px){
-	/*hamburger menu*/
-	.menu{
-		display: flex;
-		flex-direction: row;
-		text-align: center;
-		padding: 0;
-		list-style-type: none;
-	}
-	.menu li{
-		padding:1em 2em;
-		min-width: 100px;
-	}
-}
-
-@media (max-width: 780px){
-	.main-section{
-		padding: 1rem 1rem;
-	}
-	.section-header, .accordion-content {
-		max-width: 90%;
-	}
-	/*Nav*/
-	.logo {
-		width: 4em;
-	}
-	.main-nav {
-		padding: 1rem 3rem;
-	}
-	/*hamburger menu*/
-	.menu {
-		list-style-type: none;
-        position: absolute;
-		right: 0;
-		padding-right: 4em;
-        background-color: #FFF4BC;
-	}
-	.menu-icon {
-		display: block;
-		background-image:url(../media/hamburger-menu.svg);
-		background-size: cover;
-		height: 50px;
-		width: 50px;
-	}
-	.menu li {
-		height: 0px;
-		overflow: hidden;
-	}
-	#hamburger-toggle:checked ~ .menu li {
-		height: 1rem;
-		width: auto;
-		padding-top: 2em;
-		padding-bottom: 2em;
-	}
-
-	/*Header*/
-    .header-row {
-		flex-direction: column;
-		align-items: center;
-	  }
-	  .title-box, .title-img {
-		  flex: 1;
-		  width: 100%;
-		}
-	.title-img img {
-		max-height: 320px;
-	}
-	  .button-section {
-		max-width: 80%;
-	}
-}
-
-@media (max-width: 1000px) {
-	/*Header tables*/
-	.header-table{
-		width: 90%;
-	}
-	.header-table table,
-	.header-table thead,
-	.header-table tbody,
-	.header-table th,
-	.header-table td,
-	.header-table tr {
-		display: block;
-	}
-	.header-table thead {
-		display: none;
-	}
-	.header-table tr {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 10px;
-		margin-bottom: 15px;
-		padding: 10px;
-	}
-	.header-table td {
-		display: block;
-		width: 100%;
-		padding: 8px;
-	}
-	.header-table td:last-child {
-		border-bottom: none;
-	}
-	.header-table td:before {
-		content: attr(data-label);
-		font-weight: bold;
-		display: block;
-		margin-bottom: 5px;
-	}
-}
-@media (min-width: 781px) and (max-width: 1300px){
-	h1{
-		font-size: 1.8em;
-	}
-	.title-box, .title-img {
-		max-height: 14rem;
-	}
-}
-
-@media (min-width: 800px) {
-	.studieoversikt-container {
-		flex-direction: row;
-	}
-}
-
-/*Studieoversikt table Mediaqueary*/
-@media (max-width: 801px) {
-	.studieoversikt-container {
-		flex-direction: column;
-	}
+padding-bottom: 0.5rem;
 }
 
 /*ACTIVITY PAGE*/
-@media (max-width: 768px) {
-	.activity-article-container p {
-		flex: 1 1 100%;
-	}
-}
-@media (max-width: 500px) {
-	.activity-menu {
-		flex-direction: column;
-		text-align: center;
-	}
-	.activity-menu li {
-		padding: 0.4em;
-	}
-}
 .activity-page-body{
 	font-family: Helvetica,Arial, sans-serif;
 	margin: 0 auto;
@@ -629,8 +473,7 @@ padding-left: 0;
 	color:#ffffff;
 }
 .activity-header {
-	background-image: url(/media/APHeaderbildeSD.jpg);/*fotograf - Jaymantri, https://www.pexels.com/nb-no/bilde/dagslys-idrett-mennesker-park-2894/*/
-	
+	background-image: url(/media/APHeaderbildeSD.jpg); /* https://www.pexels.com/nb-no/bilde/dagslys-idrett-mennesker-park-2894/*/
 	position: relative;
 	height: 800px;
 	background-attachment: fixed;
@@ -671,7 +514,7 @@ padding-left: 0;
 	line-height: 1.6;
 }
 .activity-article-container a{
-	color: rgb(219, 212, 2);
+	color: crimson;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 800px;
@@ -696,7 +539,87 @@ padding-left: 0;
 	max-width: 100%;
 	height: auto;
 }
-.footer-activity{
-	background-color: #000000;
-	color: #fff;
+
+
+/*MEDIA QUERIES*/
+@media (max-width:400px){
+	h2{
+		font-size: 1.2em;
+	}
+	h1 +p, h2 + p {
+		font-size: 1em;
+	}
+	details:not([open]) summary, summary, details {
+		font-size: 1em;
+	}
+	.index-article {
+		display: block;
+		text-align: left;
+	}
+	.index-article img{
+		width: 100%;
+		margin-top: 0.3em;
+	}		
+} 
+@media (max-width: 500px) {
+	.activity-menu {
+		flex-direction: column;
+		text-align: center;
+	}
+	.activity-menu li {
+		padding: 0.4em;
+	}
+}
+@media (max-width: 700px){
+	.main-section{
+		padding: 1rem 1rem;
+	}
+	.section-header, .accordion-content {
+		max-width: 90%;
+	}
+	  .button-section {
+		max-width: 80%;
+	}
+}
+@media (max-width: 768px) {
+	.activity-article-container p {
+		flex: 1 1 100%;
+	}
+}
+
+@media (min-width: 800px) {
+	.studieoversikt-container {
+		flex-direction: row;
+	}
+	.gallery-column {
+		flex: 1
+	}
+	.header-intro {
+        flex-direction: row;
+    }
+    .header-table table {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+    }
+
+    .header-table tbody {
+        display: contents;
+    }
+
+    .header-table tr {
+        display: contents;
+    }
+}
+
+@media (max-width: 801px) {
+	.studieoversikt-container {
+		flex-direction: column;
+	}
+}
+@media (max-width:1000px) {
+	.footer-row{
+		padding-left: 0.5rem;
+		flex-direction: column;
+	}
 }
