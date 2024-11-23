@@ -446,7 +446,7 @@ padding-bottom: 0.5rem;
 }
 .activity-nav a {
     text-decoration: none;
-    color: rgb(222, 122, 129);
+    color: rgb(200, 228, 124);
 }
 
 .activity-header {
@@ -478,11 +478,11 @@ padding-bottom: 0.5rem;
 .activity-article-container article h2 {
     margin: 5px 0;
     padding: 1rem 0;
-    border-top: 1px solid rgb(212, 99, 106);
-    border-bottom: 1px solid rgb(212, 99, 106);
+    border-top: 1px solid rgb(200, 228, 124);
+    border-bottom: 1px solid rgb(200, 228, 124);
 }
 .activity-article-container a {
-    color: rgb(185, 106, 109);
+    color: rgb(200, 228, 124);
 }
 .activity-article-container figure {
     margin: 0;
