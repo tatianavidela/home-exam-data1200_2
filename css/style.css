@@ -41,6 +41,7 @@ nav, header,footer {
 	background-color: #FFF4BC;
 }
 label{
+	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -389,12 +390,11 @@ h4{
 }
 .nyhetsbrev-button{
 	background-color: white;
-	font-family: "arial black";
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.7em;
 	text-transform: uppercase;
 	padding: 1em 2em;
 	text-align:center;
-  	text-decoration: none;
 	display: block;
   	margin-right: 10%;
  	align-self: center;
