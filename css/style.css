@@ -423,95 +423,75 @@ padding-bottom: 0.5rem;
 }
 
 /*ACTIVITY PAGE*/
-.activity-page-body{
-	font-family: Helvetica,Arial, sans-serif;
-	margin: 0 auto;
-	background-color:#000000;
-	color:#fff;
+.activity-page-body {
+    margin: 0 auto;
+    background-color: #000000;
+    color: #fff;
+    line-height: 1.6;
 }
-.activity-nav{
-	position: sticky;
-	top: 0;
-	padding: 1rem 4rem;
-	background-color: #000000;
-	z-index: 1;
+.activity-nav {
+    position: sticky;
+    top: 0;
+    padding: 1rem 4rem;
+    background-color: #000000;
+    opacity: 0.9;
+    z-index: 1;
 }
 .activity-menu {
-	padding-left: 0px;
-	display: flex;
-	justify-content: space-around;
-	list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
 }
-.activity-nav a{
-	text-decoration: none;
-	color:#ffffff;
+.activity-nav a {
+    text-decoration: none;
+    color: rgb(222, 122, 129);
 }
+
 .activity-header {
-	background-image: url(../media/APHeaderbildeSD.jpg); /* https://www.pexels.com/nb-no/bilde/dagslys-idrett-mennesker-park-2894/*/
-	position: relative;
-	height: 800px;
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-    background-position: center center;
+    background-image: url(../media/APHeaderbildeSD.jpg);
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.activity-h1{
-	font-family: Impact, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 20vw;
-	color: black;
-	position:absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.activity-h1 {
+    font-family: owners-wide, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20vw;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.activity-article-container h2{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 800px; /* Begrens tekstbredden for lesbarhet */
-	line-height: 1.6; /* Bedre lesbarhet med linjehøyde */
+.activity-article-container article, aside {
+    padding: 1rem 2rem;
+    margin: 4rem auto;
+    max-width: 800px;
 }
-.activity-article-container h3{
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 800px;
-	line-height: 1.6;
+.activity-article-container aside {
+	background-color: rgb(36, 37, 36);
+
 }
-.activity-article-container{
-	display: flex;
-	gap: 3rem;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	margin: 2rem auto;
-	padding: 2rem 2rem;
-	max-width: 800px;
-	line-height: 1.6;
+.activity-article-container article h2 {
+    margin: 5px 0;
+    padding: 1rem 0;
+    border-top: 1px solid rgb(212, 99, 106);
+    border-bottom: 1px solid rgb(212, 99, 106);
 }
-.activity-article-container a{
-	color: rgb(207, 205, 102);
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 800px;
-	line-height: 1.6;
+.activity-article-container a {
+    color: rgb(185, 106, 109);
 }
-.activity-article-container p {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 800px;
-	line-height: 1.6;
+.activity-article-container figure {
+    margin: 0;
 }
-.activity-article-container ul{
-	list-style-type:none;
-	padding-left: 0;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 800px;
-	line-height: 1.6;
-}
-.activity-article-container img{
-	flex: 1 1 40%;
-	max-width: 100%;
-	height: auto;
+.activity-article-container img {
+    width: 100%;
+    height: 500px;
+    object-position: 0% 60%;
+    object-fit: cover;	
 }
 
 /*MEDIA QUERIES*/
@@ -531,12 +511,16 @@ padding-bottom: 0.5rem;
 
 } 
 @media (max-width: 500px) {
+	.activity-nav {
+		padding:1rem;
+	}
 	.activity-menu {
 		flex-direction: column;
 		text-align: center;
+		margin: 0;
 	}
 	.activity-menu li {
-		padding: 0.4em;
+		padding: 0.2em;
 	}
 	.studenthistorier {
 		flex-direction: column;
