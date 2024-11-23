@@ -450,8 +450,9 @@ padding-bottom: 0.5rem;
 }
 
 .activity-header {
-    background-image: url(../media/APHeaderbildeSD.jpg);
+    background-image: url(../media/activity-header-background.jpeg); /* Photo by <a href="https://unsplash.com/@collectivecreatorsco?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ruben Gutierrez</a> on <a href="https://unsplash.com/photos/man-doing-skateboard-tricks-uTj1lul9_Pk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
     position: relative;
+	background-position: center;
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
@@ -461,6 +462,7 @@ padding-bottom: 0.5rem;
     font-family: owners-wide, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20vw;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
     color: black;
     position: absolute;
     top: 50%;
@@ -540,6 +542,7 @@ padding-bottom: 0.5rem;
 @media (max-width: 768px) {
 	.activity-header {
         background-attachment: scroll;
+		
     }
 }
 
