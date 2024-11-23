@@ -242,6 +242,7 @@ p.semester {
 td.semester, td.course-cell {
 	width: 50%;
 	vertical-align: top;
+	padding: 8px;
 	font-size: 0.9em;
 	text-align: left;
 }
