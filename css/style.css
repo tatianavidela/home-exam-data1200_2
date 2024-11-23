@@ -467,7 +467,7 @@ padding-bottom: 0.5rem;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.activity-article-container article, aside {
+.activity-article-container article, .activity-article-container aside {
     padding: 1rem 2rem;
     margin: 4rem auto;
     max-width: 800px;
